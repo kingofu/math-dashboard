@@ -233,34 +233,45 @@
         /* Main Layout */
         .main-layout {
             display: grid;
-            grid-template-columns: 280px 1fr;
+            grid-template-columns: 140px 1fr;
             gap: 2.5rem;
             align-items: start;
         }
 
         .sidebar {
             position: sticky;
-            top: 2rem;
-            height: fit-content;
+            top: 6rem;
+            max-height: calc(100vh - 8rem);
+            overflow-y: auto;
+            scrollbar-width: none; /* Firefox */
+        }
+        .sidebar::-webkit-scrollbar {
+            display: none; /* Chrome/Safari */
         }
 
         /* Controls: Search, Categorization, Sort */
         .controls {
             display: flex;
             flex-direction: column;
-            gap: 1.5rem;
+            gap: 1rem;
         }
 
         .search-sort-bar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: var(--bg-color);
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             gap: 1rem;
             width: 100%;
+            margin-bottom: 2rem;
+            padding: 1rem 0;
         }
 
         .search-wrapper {
             position: relative;
-            width: 100%;
+            flex-grow: 1;
         }
 
         .search-input {
@@ -268,9 +279,9 @@
             background: var(--card-bg);
             border: 1px solid var(--border-color);
             color: var(--text-color);
-            padding: 0.8rem 1rem 0.8rem 2.8rem;
-            border-radius: 14px;
-            font-size: 1rem;
+            padding: 0.6rem 1rem 0.6rem 2.4rem;
+            border-radius: 12px;
+            font-size: 0.9rem;
             outline: none;
         }
 
@@ -281,23 +292,24 @@
 
         .search-icon {
             position: absolute;
-            left: 1rem;
+            left: 0.9rem;
             top: 50%;
             transform: translateY(-50%);
             fill: var(--text-muted);
-            width: 1.2rem;
-            height: 1.2rem;
+            width: 1.1rem;
+            height: 1.1rem;
             pointer-events: none;
         }
 
         .sort-select {
-            width: 100%;
+            width: auto;
+            min-width: 180px;
             background: var(--card-bg);
             border: 1px solid var(--border-color);
             color: var(--text-color);
-            padding: 0.8rem 1.2rem;
-            border-radius: 14px;
-            font-size: 0.95rem;
+            padding: 0.6rem 1rem;
+            border-radius: 12px;
+            font-size: 0.88rem;
             outline: none;
             cursor: pointer;
         }
@@ -310,50 +322,53 @@
         .tabs-container {
             display: flex;
             flex-direction: column;
-            gap: 0.6rem;
+            gap: 0.5rem;
         }
 
         .tab {
             background: transparent;
-            border: 1px solid var(--border-color);
+            border: 1px solid transparent;
             color: var(--text-muted);
-            padding: 0.7rem 1.2rem;
-            border-radius: 12px;
-            font-size: 0.9rem;
+            padding: 0.5rem 0.6rem;
+            border-radius: 8px;
+            font-size: 0.8rem;
             font-weight: 500;
             cursor: pointer;
             display: flex;
+            flex-direction: row;
             align-items: center;
-            justify-content: space-between;
+            justify-content: flex-start;
             gap: 0.5rem;
             width: 100%;
             text-align: left;
+            transition: all 0.2s ease;
         }
 
         .tab:hover {
+            background: var(--tag-bg);
             color: var(--text-color);
-            border-color: var(--text-muted);
         }
 
         .tab.active {
             background: var(--accent-color);
             color: #ffffff;
             border-color: var(--accent-color);
-            box-shadow: 0 4px 14px var(--accent-glow);
+            box-shadow: 0 4px 12px var(--accent-glow);
+        }
+
+        .tab-emoji {
+            font-size: 1.1rem;
         }
 
         .tab-count {
-            background: rgba(0, 0, 0, 0.2);
-            padding: 0.15rem 0.5rem;
-            border-radius: 8px;
-            font-size: 0.78rem;
+            display: none; /* Hidden on desktop vertical sidebar for cleaner styling */
         }
 
         /* Main Grid cards layout */
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-            gap: 1.8rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
         }
 
         .card {
@@ -514,6 +529,13 @@
         }
 
         /* Responsive adaptations */
+        /* Responsive adaptations */
+        @media (max-width: 1200px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
         @media (max-width: 992px) {
             .main-layout {
                 grid-template-columns: 1fr;
@@ -526,8 +548,12 @@
             }
 
             .search-sort-bar {
+                position: static;
                 flex-direction: row;
                 gap: 1rem;
+                padding: 0;
+                margin-bottom: 1.5rem;
+                background: transparent;
             }
 
             .search-wrapper {
@@ -557,13 +583,23 @@
             .tab {
                 width: auto;
                 white-space: nowrap;
+                flex-direction: row;
                 justify-content: center;
                 border-radius: 20px;
                 padding: 0.6rem 1.2rem;
+                gap: 0.4rem;
             }
 
             .tab-count {
+                display: inline-block;
                 border-radius: 10px;
+                background: rgba(0, 0, 0, 0.2);
+                padding: 0.1rem 0.4rem;
+                font-size: 0.75rem;
+            }
+
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
@@ -602,19 +638,6 @@
         <div class="main-layout">
             <aside class="sidebar">
                 <section class="controls">
-                    <div class="search-sort-bar">
-                        <div class="search-wrapper">
-                            <!-- Search SVG -->
-                            <svg class="search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-                            <input type="text" class="search-input" placeholder="输入名称、简介或标签过滤项目..." id="searchInput" oninput="filterProjects()">
-                        </div>
-                        <select class="sort-select" id="sortSelect" onchange="filterProjects()">
-                            <option value="id_asc">按默认序号 (升序)</option>
-                            <option value="id_desc">按默认序号 (降序)</option>
-                            <option value="stars_desc" selected>按 Star 数 (从高到低)</option>
-                        </select>
-                    </div>
-
                     <div class="tabs-container" id="tabsContainer">
                         <!-- Tab headers will be generated dynamically -->
                     </div>
@@ -622,6 +645,19 @@
             </aside>
 
             <div class="content-area">
+                <div class="search-sort-bar">
+                    <div class="search-wrapper">
+                        <!-- Search SVG -->
+                        <svg class="search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                        <input type="text" class="search-input" placeholder="输入名称、简介或标签过滤项目..." id="searchInput" oninput="filterProjects()">
+                    </div>
+                    <select class="sort-select" id="sortSelect" onchange="filterProjects()">
+                        <option value="id_asc">按默认序号 (升序)</option>
+                        <option value="id_desc">按默认序号 (降序)</option>
+                        <option value="stars_desc" selected>按 Star 数 (从高到低)</option>
+                    </select>
+                </div>
+
                 <main class="grid" id="projectsGrid">
                     <!-- Project cards will be generated dynamically -->
                 </main>
@@ -695,16 +731,64 @@
             return val;
         }
 
+        function getShortCategory(catId, fullName) {
+            const categoryMeta = {
+                'all': { short: '全部', emoji: '🌐' },
+                'tutoring': { short: '智能教学', emoji: '🎓' },
+                'teaching_prep': { short: '教案备课', emoji: '📚' },
+                'slide_generation': { short: '幻灯演示', emoji: '📊' },
+                'visualization': { short: '动画生成', emoji: '🎨' },
+                'literature_retrieval': { short: '文献检索', emoji: '🔍' },
+                'paper_writing': { short: '论文写作', emoji: '✍️' },
+                'academic_polish': { short: '学术润色', emoji: '✨' },
+                'academic_writing': { short: '学术写作', emoji: '📝' },
+                'math_modeling': { short: '形式建模', emoji: '🧮' },
+                'doc_conversion': { short: '文档解析', emoji: '📄' },
+                'formatting': { short: '文档排版', emoji: '📐' },
+                'agent_framework': { short: '框架平台', emoji: '🤖' },
+                'agent_clients': { short: '智能终端', emoji: '💻' },
+                'agent_integration': { short: '接口集成', emoji: '🔌' },
+                'agent': { short: '智能助理', emoji: '🧠' },
+                'other': { short: '其他工具', emoji: '🔧' }
+            };
+            
+            if (categoryMeta[catId]) {
+                return categoryMeta[catId];
+            }
+            
+            const name = fullName || "";
+            if (name.includes('教学') || name.includes('辅导')) return { short: '智能教学', emoji: '🎓' };
+            if (name.includes('动画') || name.includes('可视化')) return { short: '动画生成', emoji: '🎨' };
+            if (name.includes('幻灯片') || name.includes('演示')) return { short: '幻灯演示', emoji: '📊' };
+            if (name.includes('文档') || name.includes('解析')) return { short: '文档解析', emoji: '📄' };
+            if (name.includes('教案') || name.includes('备课')) return { short: '教案备课', emoji: '📚' };
+            if (name.includes('建模') || name.includes('形式化')) return { short: '数学建模', emoji: '🧮' };
+            if (name.includes('论文') || name.includes('写作') || name.includes('文献')) return { short: '论文辅助', emoji: '✍️' };
+            if (name.includes('智能体') || name.includes('框架') || name.includes('集成')) return { short: '智能框架', emoji: '🤖' };
+            
+            return { short: name.substring(0, 4), emoji: '🔧' };
+        }
+
         // Render Tabs dynamically with project count
         function renderTabs() {
             const container = document.getElementById("tabsContainer");
             
             // All Tab
-            let html = `<button class="tab active" onclick="selectCategory('all')" id="tab-all">全部 <span class="tab-count">${PROJECTS.length}</span></button>`;
+            const allMeta = getShortCategory('all');
+            let html = `<button class="tab active" onclick="selectCategory('all')" id="tab-all">
+                <span class="tab-emoji">${allMeta.emoji}</span>
+                <span class="tab-text">${allMeta.short}</span>
+                <span class="tab-count">${PROJECTS.length}</span>
+            </button>`;
             
             CATEGORIES.forEach(cat => {
                 const count = PROJECTS.filter(p => p.category_id === cat.id).length;
-                html += `<button class="tab" onclick="selectCategory('${cat.id}')" id="tab-${cat.id}">${cat.name} <span class="tab-count">${count}</span></button>`;
+                const meta = getShortCategory(cat.id, cat.name);
+                html += `<button class="tab" onclick="selectCategory('${cat.id}')" id="tab-${cat.id}">
+                    <span class="tab-emoji">${meta.emoji}</span>
+                    <span class="tab-text">${meta.short}</span>
+                    <span class="tab-count">${count}</span>
+                </button>`;
             });
             
             container.innerHTML = html;
@@ -720,6 +804,16 @@
             document.getElementById(`tab-${catId}`).classList.add("active");
             
             filterProjects();
+            
+            // Scroll to the top of the main layout area to keep content aligned
+            const mainLayout = document.querySelector('.main-layout');
+            if (mainLayout) {
+                const targetScrollTop = mainLayout.offsetTop - 20;
+                window.scrollTo({
+                    top: targetScrollTop,
+                    behavior: 'smooth'
+                });
+            }
         }
 
         function clickTag(tagName) {

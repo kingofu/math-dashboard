@@ -1429,32 +1429,24 @@ const GLOBAL_DATA = {
                 "name": "智能教学与启发式辅导"
         },
         {
-                "id": "visualization",
-                "name": "数学可视化与动画生成"
+                "id": "teaching_prep",
+                "name": "教案与备课工具"
         },
         {
                 "id": "slide_generation",
                 "name": "幻灯片生成与演示"
         },
         {
-                "id": "doc_conversion",
-                "name": "文档转换与内容解析"
-        },
-        {
-                "id": "teaching_prep",
-                "name": "教案与备课工具"
-        },
-        {
-                "id": "formatting",
-                "name": "其他文档自动化工具"
-        },
-        {
-                "id": "paper_writing",
-                "name": "论文写作与投稿"
+                "id": "visualization",
+                "name": "数学可视化与动画生成"
         },
         {
                 "id": "literature_retrieval",
                 "name": "文献检索与阅读"
+        },
+        {
+                "id": "paper_writing",
+                "name": "论文写作与投稿"
         },
         {
                 "id": "academic_polish",
@@ -1467,6 +1459,14 @@ const GLOBAL_DATA = {
         {
                 "id": "math_modeling",
                 "name": "形式化数学与数模竞赛"
+        },
+        {
+                "id": "doc_conversion",
+                "name": "文档转换与内容解析"
+        },
+        {
+                "id": "formatting",
+                "name": "其他文档自动化工具"
         },
         {
                 "id": "agent_framework",
