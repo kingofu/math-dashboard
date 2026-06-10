@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 教学与学术项目看板</title>
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #09090B;
+            --container-bg: rgba(24, 24, 27, 0.6);
+            --card-bg: rgba(39, 39, 42, 0.7);
+            --border-color: rgba(255, 255, 255, 0.1);
+            --border-hover: rgba(56, 189, 248, 0.4);
+            --text-color: #F4F4F5;
+            --text-muted: #A1A1AA;
+            --accent-color: #38BDF8;
+            --accent-glow: rgba(56, 189, 248, 0.15);
+            --tag-bg: rgba(56, 189, 248, 0.1);
+            --tag-text: #38BDF8;
+            --shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+            --header-gradient: linear-gradient(135deg, #F8FAFC 0%, #94A3B8 100%);
+        }
+
+        [data-theme="light"] {
+            --bg-color: #FFFFFF;
+            --container-bg: rgba(250, 250, 250, 0.8);
+            --card-bg: #FFFFFF;
+            --border-color: rgba(0, 0, 0, 0.06);
+            --border-hover: rgba(0, 0, 0, 0.2);
+            --text-color: #18181B;
+            --text-muted: #71717A;
+            --accent-color: #18181B;
+            --accent-glow: rgba(0, 0, 0, 0.05);
+            --tag-bg: rgba(24, 24, 27, 0.06);
+            --tag-text: #18181B;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+            --header-gradient: linear-gradient(135deg, #18181B 0%, #52525B 100%);
+        }
+
+        /* Theme: 复古典藏 (Vintage Press) */
+        [data-theme="vintage"] {
+            --bg-color: #F5F2EB;
+            --container-bg: rgba(245, 242, 235, 0.85);
+            --card-bg: rgba(252, 250, 246, 0.95);
+            --border-color: rgba(42, 38, 38, 0.1);
+            --border-hover: rgba(139, 30, 15, 0.4);
+            --text-color: #2A2626;
+            --text-muted: #6B6054;
+            --accent-color: #8B1E0F;
+            --accent-glow: rgba(139, 30, 15, 0.15);
+            --tag-bg: rgba(139, 30, 15, 0.08);
+            --tag-text: #8B1E0F;
+            --shadow: 0 4px 24px rgba(42, 38, 38, 0.08);
+            --header-gradient: linear-gradient(135deg, #1A365D 0%, #8B1E0F 100%);
+        }
+
+        /* Theme: 极简北欧 (Nordic Minimal) */
+        [data-theme="nordic"] {
+            --bg-color: #ECEFF4;
+            --container-bg: rgba(236, 239, 244, 0.8);
+            --card-bg: #FAFBFC;
+            --border-color: rgba(46, 52, 64, 0.08);
+            --border-hover: rgba(94, 129, 172, 0.4);
+            --text-color: #2E3440;
+            --text-muted: #4C566A;
+            --accent-color: #5E81AC;
+            --accent-glow: rgba(94, 129, 172, 0.15);
+            --tag-bg: rgba(94, 129, 172, 0.1);
+            --tag-text: #5E81AC;
+            --shadow: 0 4px 16px rgba(46, 52, 64, 0.06);
+            --header-gradient: linear-gradient(135deg, #2E3440 0%, #4C566A 100%);
+        }
+
+        /* Theme: 工业钛灰 (Industrial) */
+        [data-theme="industrial"] {
+            --bg-color: #D1D5DB;
+            --container-bg: rgba(209, 213, 219, 0.7);
+            --card-bg: #E5E5EA;
+            --border-color: rgba(28, 28, 30, 0.1);
+            --border-hover: rgba(130, 80, 54, 0.4);
+            --text-color: #1C1C1E;
+            --text-muted: #636366;
+            --accent-color: #825036; /* 斑驳锈铁/破旧黄铜色 (Rusted Iron) */
+            --accent-glow: rgba(130, 80, 54, 0.15);
+            --tag-bg: rgba(130, 80, 54, 0.12);
+            --tag-text: #825036;
+            --shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            --header-gradient: linear-gradient(135deg, #374151 0%, #1F2937 100%);
+        }
+
+        /* Vintage theme: serif headings */
+        [data-theme="vintage"] .header-title h1,
+        [data-theme="vintage"] .card-title {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+
+        /* Nordic theme: extra-clean card borders */
+        [data-theme="nordic"] .card {
+            border-radius: 12px;
+        }
+
+        /* Industrial theme: sharper corners */
+        [data-theme="industrial"] .card {
+            border-radius: 8px;
+        }
+        [data-theme="industrial"] .container {
+            border-radius: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            transition: background-color 0.3s, border-color 0.3s, color 0.3s, box-shadow 0.3s;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            padding: 2rem 1rem;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Aura Background Gradients (Dark Mode only for heavy blur aesthetics) */
+        .aura {
+            position: absolute;
+            width: 40vw;
+            height: 40vw;
+            border-radius: 50%;
+            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+            z-index: -1;
+            filter: blur(80px);
+            pointer-events: none;
+            opacity: 0.8;
+        }
+        .aura-1 { top: -10vw; right: -10vw; }
+        .aura-2 { bottom: -10vw; left: -10vw; }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            border: 1px solid var(--border-color);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 24px;
+            padding: 2.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        /* Header block */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 2rem;
+        }
+
+        .header-title h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            background: var(--header-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .header-title p {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        .theme-controls {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .theme-select {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            cursor: pointer;
+            padding: 0.55rem 0.9rem;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            outline: none;
+            font-family: 'Inter', system-ui, sans-serif;
+            min-width: 140px;
+        }
+
+        .theme-select:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 12px var(--accent-glow);
+        }
+
+        .default-btn {
+            background: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            cursor: pointer;
+            padding: 0.55rem 0.8rem;
+            border-radius: 12px;
+            font-size: 0.78rem;
+            font-weight: 500;
+            white-space: nowrap;
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+
+        .default-btn:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+            box-shadow: 0 0 10px var(--accent-glow);
+        }
+
+        .default-btn.is-default {
+            background: var(--accent-color);
+            color: #ffffff;
+            border-color: var(--accent-color);
+        }
+
+        /* Controls: Search, Categorization, Sort */
+        .controls {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .search-sort-bar {
+            display: flex;
+            gap: 1rem;
+            width: 100%;
+        }
+
+        .search-wrapper {
+            position: relative;
+            flex-grow: 1;
+        }
+
+        .search-input {
+            width: 100%;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            padding: 0.8rem 1rem 0.8rem 2.8rem;
+            border-radius: 14px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .search-input:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 12px var(--accent-glow);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            fill: var(--text-muted);
+            width: 1.2rem;
+            height: 1.2rem;
+            pointer-events: none;
+        }
+
+        .sort-select {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            padding: 0.8rem 1.2rem;
+            border-radius: 14px;
+            font-size: 0.95rem;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .sort-select:focus {
+            border-color: var(--accent-color);
+        }
+
+        /* Category Tabs */
+        .tabs-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1.2rem;
+        }
+
+        .tab {
+            background: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            padding: 0.6rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .tab:hover {
+            color: var(--text-color);
+            border-color: var(--text-muted);
+        }
+
+        .tab.active {
+            background: var(--accent-color);
+            color: #ffffff;
+            border-color: var(--accent-color);
+            box-shadow: 0 4px 14px var(--accent-glow);
+        }
+
+        .tab-count {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 0.1rem 0.5rem;
+            border-radius: 10px;
+            font-size: 0.8rem;
+        }
+
+        /* Main Grid cards layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 1.8rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 18px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 0.4s ease-out forwards;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--border-hover);
+            box-shadow: 0 12px 24px var(--accent-glow);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.8rem;
+            gap: 0.8rem;
+        }
+
+        .card-num {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--accent-color);
+            background: var(--tag-bg);
+            padding: 0.25rem 0.6rem;
+            border-radius: 8px;
+        }
+
+        .card-stars {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #fbbf24;
+            background: rgba(251, 191, 36, 0.1);
+            padding: 0.25rem 0.6rem;
+            border-radius: 8px;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-bottom: 0.6rem;
+            color: var(--text-color);
+        }
+
+        .card-desc {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 1.2rem;
+            flex-grow: 1;
+        }
+
+        /* Tags and Action Bar in card footer */
+        .card-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .card-tag {
+            background: var(--tag-bg);
+            color: var(--tag-text);
+            font-size: 0.78rem;
+            font-weight: 500;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .card-tag:hover {
+            background: var(--accent-color);
+            color: #ffffff;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1rem;
+            margin-top: auto;
+        }
+
+        .card-cat {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .card-link {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: var(--accent-color);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.45rem 0.9rem;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            box-shadow: 0 2px 8px var(--accent-glow);
+        }
+
+        .card-link:hover {
+            filter: brightness(1.2);
+            box-shadow: 0 4px 12px var(--accent-glow);
+        }
+
+        .card-link.disabled {
+            background: var(--border-color);
+            color: var(--text-muted);
+            cursor: not-allowed;
+            pointer-events: none;
+            box-shadow: none;
+        }
+
+        /* Empty state styling */
+        .empty-state {
+            display: none;
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--text-muted);
+        }
+
+        .empty-state svg {
+            width: 4rem;
+            height: 4rem;
+            fill: var(--border-color);
+            margin-bottom: 1rem;
+        }
+
+        .empty-state h3 {
+            font-size: 1.3rem;
+            color: var(--text-color);
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 1.5rem; }
+            header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+            .theme-controls { align-self: flex-end; flex-wrap: wrap; justify-content: flex-end; }
+            .search-sort-bar { flex-direction: column; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="aura aura-1"></div>
+    <div class="aura aura-2"></div>
+
+    <div class="container">
+        <header>
+            <div class="header-title">
+                <h1>AI数学教学与学术工具导航</h1>
+                <p>实时检索、自动归类、智能标签的学术项目导航中心</p>
+            </div>
+            <div class="theme-controls">
+                <select class="theme-select" id="themeSelect2" onchange="setTheme(this.value)">
+                    <option value="dark">🌌 赛博暗夜</option>
+                    <option value="light">🌅 亚光纯白</option>
+                    <option value="vintage">📜 复古典藏</option>
+                    <option value="nordic">❄️ 极简北欧</option>
+                    <option value="industrial">🏗️ 工业钛灰</option>
+                </select>
+                <button class="default-btn" id="defaultBtn" onclick="setDefaultTheme()" title="将当前主题设为默认">⭐ 设为默认</button>
+            </div>
+        </header>
+
+        <section class="controls">
+            <div class="search-sort-bar">
+                <div class="search-wrapper">
+                    <!-- Search SVG -->
+                    <svg class="search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                    <input type="text" class="search-input" placeholder="输入名称、简介或标签过滤项目..." id="searchInput" oninput="filterProjects()">
+                </div>
+                <select class="sort-select" id="sortSelect" onchange="filterProjects()">
+                    <option value="id_asc">按默认序号 (升序)</option>
+                    <option value="id_desc">按默认序号 (降序)</option>
+                    <option value="stars_desc" selected>按 Star 数 (从高到低)</option>
+                </select>
+            </div>
+
+            <div class="tabs-container" id="tabsContainer">
+                <!-- Tab headers will be generated dynamically -->
+            </div>
+        </section>
+
+        <main class="grid" id="projectsGrid">
+            <!-- Project cards will be generated dynamically -->
+        </main>
+
+        <div class="empty-state" id="emptyState">
+            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            <h3>未找到相关项目</h3>
+            <p>请尝试更改检索条件或清除搜索框</p>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+<script>
+        
+        
+        
+        let activeCategory = "all";
+        let activeTheme = 'dark';
+
+        // Initialization
+        window.onload = function() {
+            renderTabs();
+            // Default sort: by Star count descending
+            document.getElementById('sortSelect').value = 'stars_desc';
+            filterProjects();
+
+            // Apply saved default theme (localStorage) or fallback to dark
+            const savedTheme = localStorage.getItem('dashboardDefaultTheme') || 'dark';
+            setTheme(savedTheme);
+        };
+
+        function setTheme(theme) {
+            activeTheme = theme;
+            document.documentElement.setAttribute('data-theme', theme);
+            // Sync the header dropdown
+            const sel = document.getElementById('themeSelect2');
+            if (sel) sel.value = theme;
+            updateDefaultBtnState();
+        }
+
+        function setDefaultTheme() {
+            localStorage.setItem('dashboardDefaultTheme', activeTheme);
+            // Brief visual feedback
+            const btn = document.getElementById('defaultBtn');
+            btn.textContent = '✅ 已保存';
+            btn.classList.add('is-default');
+            setTimeout(() => { updateDefaultBtnState(); }, 1200);
+        }
+
+        function updateDefaultBtnState() {
+            const btn = document.getElementById('defaultBtn');
+            if (!btn) return;
+            const saved = localStorage.getItem('dashboardDefaultTheme');
+            if (saved === activeTheme) {
+                btn.classList.add('is-default');
+                btn.textContent = '✅ 当前默认';
+            } else {
+                btn.classList.remove('is-default');
+                btn.textContent = '⭐ 设为默认';
+            }
+        }
+
+        // Helper to count category stars
+        function parseStarValue(starStr) {
+            if (!starStr || starStr === 'N/A' || starStr === '-') return -1;
+            let val = parseFloat(starStr);
+            if (isNaN(val)) return -1;
+            if (starStr.toLowerCase().includes('k')) val *= 1000;
+            return val;
+        }
+
+        // Render Tabs dynamically with project count
+        function renderTabs() {
+            const container = document.getElementById("tabsContainer");
+            
+            // All Tab
+            let html = `<button class="tab active" onclick="selectCategory('all')" id="tab-all">全部 <span class="tab-count">${PROJECTS.length}</span></button>`;
+            
+            CATEGORIES.forEach(cat => {
+                const count = PROJECTS.filter(p => p.category_id === cat.id).length;
+                html += `<button class="tab" onclick="selectCategory('${cat.id}')" id="tab-${cat.id}">${cat.name} <span class="tab-count">${count}</span></button>`;
+            });
+            
+            container.innerHTML = html;
+        }
+
+        function selectCategory(catId) {
+            activeCategory = catId;
+            
+            // Toggle active classes on tab headers
+            document.querySelectorAll(".tab").forEach(tab => {
+                tab.classList.remove("active");
+            });
+            document.getElementById(`tab-${catId}`).classList.add("active");
+            
+            filterProjects();
+        }
+
+        function clickTag(tagName) {
+            const searchInput = document.getElementById("searchInput");
+            searchInput.value = tagName;
+            filterProjects();
+        }
+
+        // Main filter & render function
+        function filterProjects() {
+            const query = document.getElementById("searchInput").value.trim().toLowerCase();
+            const sortVal = document.getElementById("sortSelect").value;
+            const grid = document.getElementById("projectsGrid");
+            const emptyState = document.getElementById("emptyState");
+            
+            // 1. Filter
+            let filtered = PROJECTS.filter(p => {
+                // Category filter
+                if (activeCategory !== 'all' && p.category_id !== activeCategory) return false;
+                
+                // Text search filter
+                if (query) {
+                    const matchName = p.name.toLowerCase().includes(query);
+                    const matchDesc = p.description.toLowerCase().includes(query);
+                    const matchUrl = p.url.toLowerCase().includes(query);
+                    const matchTags = p.tags.some(t => t.toLowerCase().includes(query));
+                    return matchName || matchDesc || matchUrl || matchTags;
+                }
+                
+                return true;
+            });
+            
+            // 2. Sort
+            if (sortVal === "id_asc") {
+                filtered.sort((a, b) => a.num - b.num);
+            } else if (sortVal === "id_desc") {
+                filtered.sort((a, b) => b.num - a.num);
+            } else if (sortVal === "stars_desc") {
+                filtered.sort((a, b) => parseStarValue(b.stars) - parseStarValue(a.stars));
+            }
+            
+            // 3. Render
+            if (filtered.length === 0) {
+                grid.style.display = "none";
+                emptyState.style.display = "block";
+            } else {
+                grid.style.display = "grid";
+                emptyState.style.display = "none";
+                
+                grid.innerHTML = filtered.map(p => {
+                    const starsHTML = p.stars && p.stars !== 'N/A' 
+                        ? `<div class="card-stars">⭐ ${p.stars}</div>` 
+                        : '';
+                    const tagsHTML = p.tags.map(t => `<span class="card-tag" onclick="clickTag('${t}', event)">${t}</span>`).join('');
+                    
+                    const linkClass = p.url === 'N/A' ? 'card-link disabled' : 'card-link';
+                    const linkText = p.url.includes('github.com') ? 'GitHub' : (p.url === 'N/A' ? '无链接' : '访问链接');
+                    
+                    return `
+                        <div class="card">
+                            <div>
+                                <div class="card-header">
+                                    <span class="card-num">项目 ${p.num}</span>
+                                    ${starsHTML}
+                                </div>
+                                <h3 class="card-title">${p.name}</h3>
+                                <p class="card-desc">${p.description}</p>
+                                <div class="card-tags">
+                                    ${tagsHTML}
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="card-cat">${p.category_name}</span>
+                                <a href="${p.url}" class="${linkClass}" target="_blank">
+                                    <svg style="width: 1rem; height: 1rem; fill: currentColor;" viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                                    ${linkText}
+                                </a>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+            }
+        }
+    </script>
+</body>
+</html>
