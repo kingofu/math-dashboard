@@ -1449,6 +1449,21 @@ const GLOBAL_DATA = {
                         "学术科研",
                         "SVG排版"
                 ]
+        },
+        {
+                "num": 110,
+                "name": "paper-search-mcp",
+                "url": "https://github.com/openags/paper-search-mcp",
+                "description": "支持从 arXiv, PubMed, bioRxiv, Google Scholar 等多源平台一键并发检索、去重和下载学术论文的 MCP 服务端，支持 OpenAlex 和 Unpaywall，专为 AI 辅助科研设计。",
+                "stars": "1.8k",
+                "category_id": "literature_retrieval",
+                "category_name": "文献检索与阅读",
+                "tags": [
+                        "文献检索",
+                        "MCP",
+                        "智能助教",
+                        "学术科研"
+                ]
         }
 ],
     CATEGORIES: [
