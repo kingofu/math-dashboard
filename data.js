@@ -1421,6 +1421,34 @@ const GLOBAL_DATA = {
                         "文档自动化",
                         "学术科研"
                 ]
+        },
+        {
+                "num": 108,
+                "name": "engineering-figure-agent",
+                "url": "https://github.com/heyu-233/engineering-figure-agent",
+                "description": "Agent-native figure production for engineering and CS papers. 把工程论文里的系统架构图、算法流程图、实验曲线和多面板图，拆成可控的生成流程：概念图走 image mode，精确数值图走 plot mode。",
+                "stars": "228",
+                "category_id": "visualization",
+                "category_name": "数学可视化与动画生成",
+                "tags": [
+                        "可视化",
+                        "学术科研",
+                        "论文写作"
+                ]
+        },
+        {
+                "num": 109,
+                "name": "PNG-to-SVG-",
+                "url": "https://github.com/yangqirui2020/PNG-to-SVG-",
+                "description": "辅助生成、重构和检查论文图 SVG 的 Codex skill。支持将 PNG/JPG/PDF 截图重构为 Figma 兼容、公式排版规范的矢量可编辑 SVG。",
+                "stars": "8",
+                "category_id": "visualization",
+                "category_name": "数学可视化与动画生成",
+                "tags": [
+                        "可视化",
+                        "学术科研",
+                        "SVG排版"
+                ]
         }
 ],
     CATEGORIES: [
