@@ -1464,6 +1464,21 @@ const GLOBAL_DATA = {
                         "智能助教",
                         "学术科研"
                 ]
+        },
+        {
+                "num": 111,
+                "name": "fireworks-tech-graph",
+                "url": "https://github.com/yizhiyanhua-ai/fireworks-tech-graph",
+                "description": "支持从自然语言生成出版级 SVG+PNG 技术图表的工具。支持 14 种图表类型，包括 UML 类图、时序图、系统架构图以及 RAG、智能体工作流等多种专业模型图的渲染与排版，支持多图组合及样式自定义。",
+                "stars": "7.6k",
+                "category_id": "visualization",
+                "category_name": "数学可视化与动画生成",
+                "tags": [
+                        "可视化",
+                        "架构图",
+                        "时序图",
+                        "智能助教"
+                ]
         }
 ],
     CATEGORIES: [
