@@ -1466,6 +1466,21 @@ const GLOBAL_DATA = {
                                 "时序图",
                                 "智能助教"
                         ]
+                },
+                {
+                        "num": 111,
+                        "name": "research-gap-pipeline",
+                        "url": "https://github.com/g2zz/research-gap-pipeline",
+                        "description": "面向文献综述与论文选题的研究空白发现流水线。将文献检索、表格清洗、逐篇编码、主题归纳、研究 Gap 识别等繁杂步骤拆解为一套可复核、可追溯的标准化流程，每一个选题均可回溯到具体文献。",
+                        "stars": "1",
+                        "category_id": "literature_retrieval",
+                        "category_name": "文献检索与阅读",
+                        "tags": [
+                                "文献检索",
+                                "论文写作",
+                                "学术科研",
+                                "智能助教"
+                        ]
                 }
         ],
         "CATEGORIES": [
