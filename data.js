@@ -1481,6 +1481,21 @@ const GLOBAL_DATA = {
                         "学术科研",
                         "智能助教"
                 ]
+        },
+        {
+                "num": 112,
+                "name": "MathModelAgent",
+                "url": "https://github.com/jihe520/MathModelAgent",
+                "description": "专为数学建模设计的 AI 智能体与技能包。支持自动化运行数学建模任务流程，并可自动生成一份结构完整、可直接提交的数学建模学术论文。",
+                "stars": "2.4k",
+                "category_id": "math_modeling",
+                "category_name": "形式化数学与数模竞赛",
+                "tags": [
+                        "数学建模",
+                        "论文写作",
+                        "AI智能体",
+                        "学术科研"
+                ]
         }
 ],
     CATEGORIES: [
