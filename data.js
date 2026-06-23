@@ -2026,6 +2026,35 @@ const GLOBAL_DATA = {
                                 "学术科研",
                                 "数学教育"
                         ]
+                },
+                {
+                        "num": 151,
+                        "name": "gaokaomath",
+                        "url": "https://github.com/deekur/gaokaomath",
+                        "description": "历年高考数学真题合集与解答，包含全国卷及北京、上海、天津等各省市高考数学真题，持续更新。",
+                        "stars": "599",
+                        "category_id": "teaching_prep",
+                        "category_name": "教案与备课工具",
+                        "tags": [
+                                "高考数学",
+                                "数学教育",
+                                "备课资源"
+                        ]
+                },
+                {
+                        "num": 152,
+                        "name": "Unlimited-OCR",
+                        "url": "https://github.com/baidu/Unlimited-OCR",
+                        "description": "百度开源的长文本/多页文档 OCR 解析模型。采用参考滑动窗口注意力（R-SWA）技术，实现恒定的 KV Cache，支持一键对数十页的超长 PDF/图像进行高效排版与公式转写。",
+                        "stars": "1.3k",
+                        "category_id": "doc_conversion",
+                        "category_name": "文档转换与内容解析",
+                        "tags": [
+                                "OCR",
+                                "文档自动化",
+                                "公式识别",
+                                "开发工具"
+                        ]
                 }
         ],
         "CATEGORIES": [
