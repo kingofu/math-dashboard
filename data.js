@@ -717,7 +717,7 @@ const GLOBAL_DATA = {
                 },
                 {
                         "num": 55,
-                        "name": "skills (TypeScript)",
+                        "name": "skills (Matt Pocock)",
                         "url": "https://github.com/mattpocock/skills",
                         "description": "【前端工程组件】知名 TypeScript 专家 Matt Pocock 提供的前端代码实战与架构技能集合库。",
                         "stars": "142.6k",
