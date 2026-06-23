@@ -2099,6 +2099,21 @@ const GLOBAL_DATA = {
                                 "MCP与插件",
                                 "学术科研"
                         ]
+                },
+                {
+                        "num": 156,
+                        "name": "Math-model-skills",
+                        "url": "https://github.com/WuXinbo-bo/Math-model-skills",
+                        "description": "数学建模竞赛智能体工程群。基于 14 阶段流水线、7 种角色以及 35 个门禁规则设计的数学建模自动化智能体系统。",
+                        "stars": "1",
+                        "category_id": "math_modeling",
+                        "category_name": "形式化数学与数模竞赛",
+                        "tags": [
+                                "数学建模",
+                                "AI智能体",
+                                "开发工具",
+                                "学术科研"
+                        ]
                 }
         ],
         "CATEGORIES": [
