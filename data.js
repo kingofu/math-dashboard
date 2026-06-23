@@ -2055,6 +2055,50 @@ const GLOBAL_DATA = {
                                 "公式识别",
                                 "开发工具"
                         ]
+                },
+                {
+                        "num": 153,
+                        "name": "AutoFigure-Edit",
+                        "url": "https://github.com/ResearAI/AutoFigure-Edit",
+                        "description": "基于 LLM 的学术论文插图自动生成与编辑系统。能够将论文的方法论章节（Method Section）直接转化为完全可编辑的矢量 SVG 图表，并内置可视化编辑器，支持一键模仿目标论文插图的视觉风格。",
+                        "stars": "3.8k",
+                        "category_id": "visualization",
+                        "category_name": "数学可视化与动画生成",
+                        "tags": [
+                                "可视化",
+                                "论文写作",
+                                "学术科研",
+                                "SVG排版"
+                        ]
+                },
+                {
+                        "num": 154,
+                        "name": "html-presentation",
+                        "url": "https://github.com/juanjuanjie/html-presentation",
+                        "description": "基于 HTML 的技术与学术课程演示文稿制作工具，支持使用 Web 标准技术快速构建响应式、交互式的幻灯片。",
+                        "stars": "58",
+                        "category_id": "slide_generation",
+                        "category_name": "幻灯片生成与演示",
+                        "tags": [
+                                "幻灯片",
+                                "文档自动化",
+                                "学术教学"
+                        ]
+                },
+                {
+                        "num": 155,
+                        "name": "llm-for-zotero",
+                        "url": "https://github.com/yilewang/llm-for-zotero",
+                        "description": "基于 Zotero 文献库的学术科研智能体（Research Agent）。支持对本地文献进行高精度检索与问答，通过 MCP 协议与文献管理系统深度融合，构建可溯源的 RAG 文献问答与综述工作流。",
+                        "stars": "2.2k",
+                        "category_id": "literature_retrieval",
+                        "category_name": "文献检索与阅读",
+                        "tags": [
+                                "文献检索",
+                                "Zotero",
+                                "MCP与插件",
+                                "学术科研"
+                        ]
                 }
         ],
         "CATEGORIES": [
