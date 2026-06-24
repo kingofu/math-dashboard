@@ -2114,6 +2114,21 @@ const GLOBAL_DATA = {
                                 "开发工具",
                                 "学术科研"
                         ]
+                },
+                {
+                        "num": 157,
+                        "name": "Light-skills",
+                        "url": "https://github.com/Light0305/Light-skills",
+                        "description": "Light —— 全流程科研技能包。包含 28 个覆盖文献调研到投稿全流程的实用技能，配套 9 个可核查知识库，完美适配主流 AI 编程客户端。",
+                        "stars": "215",
+                        "category_id": "agent_integration",
+                        "category_name": "MCP/插件与技能集成",
+                        "tags": [
+                                "学术科研",
+                                "智能助教",
+                                "文献检索",
+                                "MCP与插件"
+                        ]
                 }
         ],
         "CATEGORIES": [
