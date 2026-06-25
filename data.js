@@ -2129,6 +2129,21 @@ const GLOBAL_DATA = {
                                 "文献检索",
                                 "MCP与插件"
                         ]
+                },
+                {
+                        "num": 158,
+                        "name": "awesome-geogebra-ai",
+                        "url": "https://github.com/Ceiei/awesome-geogebra-ai",
+                        "description": "GeoGebra + AI 数学题可视化工具，将大模型与动态数学软件相结合，自动生成数学几何题的可视化图形与交互内容。",
+                        "stars": "1",
+                        "category_id": "visualization",
+                        "category_name": "数学可视化与动画生成",
+                        "tags": [
+                                "可视化",
+                                "数学教育",
+                                "GeoGebra",
+                                "开发工具"
+                        ]
                 }
         ],
         "CATEGORIES": [
