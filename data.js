@@ -2144,6 +2144,156 @@ const GLOBAL_DATA = {
                                 "GeoGebra",
                                 "开发工具"
                         ]
+                },
+                {
+                        "name": "matlab-agentic-toolkit",
+                        "url": "https://github.com/matlab/matlab-agentic-toolkit",
+                        "description": "MATLAB 官方推出的智能体工具包，将 MATLAB 强大的数学计算与工程建模能力接入 AI 智能体，使其适配复杂的工程和科学计算工作流。",
+                        "stars": "679",
+                        "category_id": "agent_integration",
+                        "category_name": "MCP/插件与技能集成",
+                        "tags": [
+                                "MATLAB",
+                                "AI智能体",
+                                "开发工具",
+                                "MCP与插件"
+                        ],
+                        "num": 159
+                },
+                {
+                        "name": "chengfeng-videocut-skills",
+                        "url": "https://github.com/Agentchengfeng/chengfeng-videocut-skills",
+                        "description": "基于 Claude Code 技能体系（Skills）构建的视频剪辑智能体，支持通过自然语言指令自动化执行视频剪辑与后期处理任务。",
+                        "stars": "2.3k",
+                        "category_id": "agent_integration",
+                        "category_name": "MCP/插件与技能集成",
+                        "tags": [
+                                "视频剪辑",
+                                "智能体",
+                                "MCP与插件",
+                                "开发工具"
+                        ],
+                        "num": 160
+                },
+                {
+                        "name": "tutor-skills",
+                        "url": "https://github.com/bevibing/tutor-skills",
+                        "description": "专为 Claude Code 设计的智能助教技能。能够将 PDF、电子文档以及代码仓库深度解析并转化为结构化的 Obsidian 个人知识库与学习卡片。",
+                        "stars": "979",
+                        "category_id": "tutoring",
+                        "category_name": "智能教学与启发式辅导",
+                        "tags": [
+                                "Obsidian",
+                                "智能助教",
+                                "文档自动化",
+                                "MCP与插件"
+                        ],
+                        "num": 161
+                },
+                {
+                        "name": "sift-kg",
+                        "url": "https://github.com/juanceresa/sift-kg",
+                        "description": "通过大模型一键将任意文档集合提取并转化为关系明确的知识图谱的 CLI 智能工具，支持实体去重与人机协同确认。",
+                        "stars": "601",
+                        "category_id": "doc_conversion",
+                        "category_name": "文档转换与内容解析",
+                        "tags": [
+                                "知识图谱",
+                                "文档自动化",
+                                "学术科研",
+                                "开发工具"
+                        ],
+                        "num": 162
+                },
+                {
+                        "name": "deepx-code",
+                        "url": "https://github.com/itmisx/deepx-code",
+                        "description": "专为 DeepSeek 大模型深度定制的编程智能体。原生支持模型路由、代码图谱分析、OCR 截图识别以及自动上下文压缩，从底层节省 Token。",
+                        "stars": "237",
+                        "category_id": "agent_framework",
+                        "category_name": "智能体框架与平台",
+                        "tags": [
+                                "DeepSeek",
+                                "AI智能体",
+                                "代码图谱",
+                                "开发工具"
+                        ],
+                        "num": 163
+                },
+                {
+                        "name": "visual-ip-illustrations",
+                        "url": "https://github.com/yangchuansheng/visual-ip-illustrations",
+                        "description": "专为学术分享或文章配图设计的 Codex 技能。支持一键生成手绘风格的 16:9 比例插画，并内置多种视觉 IP 设计路线。",
+                        "stars": "201",
+                        "category_id": "visualization",
+                        "category_name": "数学可视化与动画生成",
+                        "tags": [
+                                "可视化",
+                                "学术插图",
+                                "开发工具",
+                                "MCP与插件"
+                        ],
+                        "num": 164
+                },
+                {
+                        "name": "bili-note",
+                        "url": "https://github.com/Rimagination/bili-note",
+                        "description": "视频学习助手工具。能够将 Bilibili 教学视频一键解析并导出为结构化 Markdown 学习笔记，同时对完整字幕及核心评论进行存档。",
+                        "stars": "77",
+                        "category_id": "tutoring",
+                        "category_name": "智能教学与启发式辅导",
+                        "tags": [
+                                "Markdown",
+                                "视频笔记",
+                                "数学教育",
+                                "智能助教"
+                        ],
+                        "num": 165
+                },
+                {
+                        "name": "tex2word",
+                        "url": "https://github.com/yfyang86/tex2word",
+                        "description": "实用的文档格式转换工具，支持将学术界常用的 LaTeX 文档高保真地转换为 Word XML（docx 兼容）格式。",
+                        "stars": "34",
+                        "category_id": "doc_conversion",
+                        "category_name": "文档转换与内容解析",
+                        "tags": [
+                                "LaTeX",
+                                "文档转换",
+                                "文档自动化",
+                                "学术科研"
+                        ],
+                        "num": 166
+                },
+                {
+                        "name": "Scientific-research-SKILL",
+                        "url": "https://github.com/Liu-MingH/Scientific-research-SKILL",
+                        "description": "结构化 AI 辅助科研代码生成技能包。内置 6 重学术规范与安全护栏以及 11 套提示词模板，规范学术代码编写。",
+                        "stars": "2",
+                        "category_id": "agent_integration",
+                        "category_name": "MCP/插件与技能集成",
+                        "tags": [
+                                "学术科研",
+                                "代码生成",
+                                "MCP与插件",
+                                "开发工具"
+                        ],
+                        "num": 167
+                },
+                {
+                        "name": "scholay/skills",
+                        "url": "https://github.com/scholay/skills",
+                        "description": "由 Scholay 社区维护并持续更新的开源学术 AI 技能集合，提供多项专门针对文献阅读与科研助手的扩展能力。",
+                        "stars": "10",
+                        "category_id": "agent_integration",
+                        "category_name": "MCP/插件与技能集成",
+                        "tags": [
+                                "学术科研",
+                                "智能助教",
+                                "MCP与插件",
+                                "开发工具"
+                        ],
+                        "num": 168
                 }
         ],
         "CATEGORIES": [
