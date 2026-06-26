@@ -2309,6 +2309,36 @@ const GLOBAL_DATA = {
                                 "数学教育",
                                 "开发工具"
                         ]
+                },
+                {
+                        "num": 170,
+                        "name": "paint-doodle",
+                        "url": "https://github.com/Mixiaxiaoyu/paint-doodle",
+                        "description": "基于 Codex 技能体系（Skills）的 MS Paint 潦草手绘插画生成器。专门用于自动化生成具有“手绘与吐槽涂鸦感”的成语解释图、事件示意图或荒诞小故事插画。",
+                        "stars": "8",
+                        "category_id": "agent_integration",
+                        "category_name": "MCP/插件与技能集成",
+                        "tags": [
+                                "插画生成",
+                                "手绘涂鸦",
+                                "开发工具",
+                                "MCP与插件"
+                        ]
+                },
+                {
+                        "num": 171,
+                        "name": "word-mathtype-docx",
+                        "url": "https://github.com/zhs7gmzw2t-debug/word-mathtype-docx",
+                        "description": "Word 文档公式自动化转换工具与 Codex 技能包。支持将 .docx 文档中的 Office 原生公式（OMML）提取并转化为可编辑的 MathType OLE 对象，内置 MathML 校验与排版修复机制。",
+                        "stars": "1",
+                        "category_id": "doc_conversion",
+                        "category_name": "文档转换与内容解析",
+                        "tags": [
+                                "Word公式",
+                                "MathType",
+                                "文档自动化",
+                                "文档转换"
+                        ]
                 }
         ],
         "CATEGORIES": [
