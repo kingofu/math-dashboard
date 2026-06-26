@@ -2294,6 +2294,21 @@ const GLOBAL_DATA = {
                                 "开发工具"
                         ],
                         "num": 168
+                },
+                {
+                        "num": 169,
+                        "name": "geometry-assistant",
+                        "url": "https://github.com/mindbeam-vc/geometry-assistant",
+                        "description": "立体几何 3D 可视化辅助教学与解题工具。支持将立体几何题目（点、线、面及约束条件）数据渲染为交互式 3D 场景，生成自包含 HTML 文件以供旋转、缩放和渐进式解题展示，适配主流 AI 编程客户端。",
+                        "stars": "2",
+                        "category_id": "visualization",
+                        "category_name": "数学可视化与动画生成",
+                        "tags": [
+                                "立体几何",
+                                "3D渲染",
+                                "数学教育",
+                                "开发工具"
+                        ]
                 }
         ],
         "CATEGORIES": [
