@@ -2339,6 +2339,126 @@ const GLOBAL_DATA = {
                                 "文档自动化",
                                 "文档转换"
                         ]
+                },
+                {
+                        "name": "graphrag",
+                        "url": "https://github.com/microsoft/graphrag",
+                        "description": "微软开源的基于知识图谱的检索增强生成（RAG）系统。通过结合图结构和语言模型，从非结构化文本中提取出实体和关系，构建结构化知识网络以提供更精准的全局性问答。",
+                        "stars": "34.0k",
+                        "category_id": "agent_framework",
+                        "category_name": "智能体框架与平台",
+                        "tags": [
+                                "GraphRAG",
+                                "RAG",
+                                "知识图谱",
+                                "开发工具"
+                        ],
+                        "num": 172
+                },
+                {
+                        "name": "ai-guide",
+                        "url": "https://github.com/liyupi/ai-guide",
+                        "description": "程序员鱼皮开源的 AI 资源导航与零基础 Vibe Coding 实操教程。涵盖 DeepSeek/Claude 等主流大模型玩法、编程智能体、RAG、MCP 知识与 AI 效率工具。",
+                        "stars": "16.3k",
+                        "category_id": "other",
+                        "category_name": "其他学术与教学工具",
+                        "tags": [
+                                "AI教程",
+                                "VibeCoding",
+                                "开源文档",
+                                "智能助教"
+                        ],
+                        "num": 173
+                },
+                {
+                        "name": "hyperframes",
+                        "url": "https://github.com/heygen-com/hyperframes",
+                        "description": "HeyGen 开源的专为 AI 智能体设计的 HTML 视频渲染与生成系统。允许智能体通过编写 HTML 代码自动渲染和输出高质量视频。",
+                        "stars": "31.4k",
+                        "category_id": "visualization",
+                        "category_name": "数学可视化与动画生成",
+                        "tags": [
+                                "视频生成",
+                                "HTML渲染",
+                                "AI智能体",
+                                "开发工具"
+                        ],
+                        "num": 174
+                },
+                {
+                        "name": "OpenMontage",
+                        "url": "https://github.com/calesthio/OpenMontage",
+                        "description": "开源的智能体驱动视频生产系统。包含 12 条自动化工作流管线、52 个工具和 500 多个 Agent 技能，可将 AI 编程助手直接转变为全功能的视频制作工作室。",
+                        "stars": "22.4k",
+                        "category_id": "agent_framework",
+                        "category_name": "智能体框架与平台",
+                        "tags": [
+                                "视频剪辑",
+                                "AI智能体",
+                                "多智能体",
+                                "开发工具"
+                        ],
+                        "num": 175
+                },
+                {
+                        "name": "video-podcast-maker",
+                        "url": "https://github.com/Agents365-ai/video-podcast-maker",
+                        "description": "面向 AI 编程智能体的视频播客自动生成工具，支持全自动生产 4K 级别的视频播客内容。",
+                        "stars": "1.3k",
+                        "category_id": "visualization",
+                        "category_name": "数学可视化与动画生成",
+                        "tags": [
+                                "视频播客",
+                                "自动化视频",
+                                "AI智能体",
+                                "开发工具"
+                        ],
+                        "num": 176
+                },
+                {
+                        "name": "penpot",
+                        "url": "https://github.com/penpot/penpot",
+                        "description": "开源、跨平台的协作设计与原型制作工具。支持 Web 标准（SVG 和 CSS），专为设计师和前端开发者打通设计到代码的代码级协作。",
+                        "stars": "53.7k",
+                        "category_id": "other",
+                        "category_name": "其他学术与教学工具",
+                        "tags": [
+                                "Figma平替",
+                                "原型设计",
+                                "开源设计",
+                                "通用工具"
+                        ],
+                        "num": 177
+                },
+                {
+                        "name": "horseMD",
+                        "url": "https://github.com/BND-1/horseMD",
+                        "description": "一款免费开源的所见即所得 Markdown 编辑器（Typora 免费平替）。支持标签页多文件管理和直观的文件树导航。",
+                        "stars": "133",
+                        "category_id": "formatting",
+                        "category_name": "其他文档自动化工具",
+                        "tags": [
+                                "Markdown",
+                                "所见即所得",
+                                "Typora平替",
+                                "通用工具"
+                        ],
+                        "num": 178
+                },
+                {
+                        "name": "Ameow",
+                        "url": "https://github.com/Wutpeach/Ameow",
+                        "description": "面向视频后期与内容创作者的轻量级桌面素材采集工具。支持整合网页视频、图片和本地文件，通过浏览器插件复用登录态一键解析和转码处理。",
+                        "stars": "74",
+                        "category_id": "other",
+                        "category_name": "其他学术与教学工具",
+                        "tags": [
+                                "素材采集",
+                                "视频下载",
+                                "创作者工具",
+                                "通用工具"
+                        ],
+                        "num": 179
                 }
         ],
         "CATEGORIES": [
