@@ -2459,6 +2459,36 @@ const GLOBAL_DATA = {
                                 "通用工具"
                         ],
                         "num": 179
+                },
+                {
+                        "num": 180,
+                        "name": "agent-skills-playground",
+                        "url": "https://github.com/matlab/agent-skills-playground",
+                        "description": "MATLAB 官方提供的智能体技能沙箱。主要用于原型设计和演示适用于 MATLAB 及 Simulink 任务的 Agent 技能（Skills）。",
+                        "stars": "134",
+                        "category_id": "agent_integration",
+                        "category_name": "MCP/插件与技能集成",
+                        "tags": [
+                                "MATLAB",
+                                "Simulink",
+                                "AI智能体",
+                                "开发工具"
+                        ]
+                },
+                {
+                        "num": 181,
+                        "name": "simulink-agentic-toolkit",
+                        "url": "https://github.com/matlab/simulink-agentic-toolkit",
+                        "description": "Simulink 智能体工具包，为 AI 智能体赋予了在 Simulink 环境中开展系统建模与仿真控制等系统级开发能力。",
+                        "stars": "697",
+                        "category_id": "agent_integration",
+                        "category_name": "MCP/插件与技能集成",
+                        "tags": [
+                                "Simulink",
+                                "AI智能体",
+                                "系统设计",
+                                "开发工具"
+                        ]
                 }
         ],
         "CATEGORIES": [
