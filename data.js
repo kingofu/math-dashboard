@@ -2489,6 +2489,50 @@ const GLOBAL_DATA = {
                                 "系统设计",
                                 "开发工具"
                         ]
+                },
+                {
+                        "num": 182,
+                        "name": "rules (MATLAB)",
+                        "url": "https://github.com/matlab/rules",
+                        "description": "MATLAB 官方整理的 AI 编程辅助规则库。针对 Cursor、Windsurf、Claude Code 和 GitHub Copilot 等 AI 编程助手进行了优化，包含面向 MATLAB 开发的最佳实践与编码规范。",
+                        "stars": "42",
+                        "category_id": "agent_integration",
+                        "category_name": "MCP/插件与技能集成",
+                        "tags": [
+                                "MATLAB",
+                                "AI提示词",
+                                "开发工具",
+                                "规则配置"
+                        ]
+                },
+                {
+                        "num": 183,
+                        "name": "prompts (MATLAB)",
+                        "url": "https://github.com/matlab/prompts",
+                        "description": "面向 MATLAB 开发的 AI 提示词（Prompts）精选合集。支持 MATLAB Copilot、GitHub Copilot、Claude 和 Cursor，涵盖实时脚本、信号处理、机器学习及控制系统等开发场景。",
+                        "stars": "66",
+                        "category_id": "agent_integration",
+                        "category_name": "MCP/插件与技能集成",
+                        "tags": [
+                                "MATLAB",
+                                "AI提示词",
+                                "开发工具"
+                        ]
+                },
+                {
+                        "num": 184,
+                        "name": "matlab-mcp-server",
+                        "url": "https://github.com/matlab/matlab-mcp-server",
+                        "description": "MathWorks 官方推出的 MATLAB MCP 服务端。支持 AI 应用通过标准 MCP 协议直接调用本地 MATLAB，为 Claude Code 和 VS Code 等编程智能体提供代码运行与控制能力。",
+                        "stars": "1.0k",
+                        "category_id": "agent_integration",
+                        "category_name": "MCP/插件与技能集成",
+                        "tags": [
+                                "MATLAB",
+                                "MCP与插件",
+                                "AI智能体",
+                                "开发工具"
+                        ]
                 }
         ],
         "CATEGORIES": [
