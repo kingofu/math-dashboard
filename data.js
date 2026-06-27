@@ -2533,6 +2533,22 @@ const GLOBAL_DATA = {
                                 "AI智能体",
                                 "开发工具"
                         ]
+                },
+                {
+                        "num": 185,
+                        "name": "mathVideoMaker",
+                        "url": "https://github.com/GordenSun/mathVideoMaker",
+                        "description": "基于 Cursor Agent 技能体系的数学视频与交互网页生成器。能够根据需求同步生成数学推导动画（基于 Manim 渲染为 MP4）与配套的交互式网页（自包含单 HTML，含 KaTeX 和 Canvas 交互），并提供机械化布局、缺字形检测及网页静态检查，保障无视觉能力大模型的生成质量。",
+                        "stars": "224",
+                        "category_id": "visualization",
+                        "category_name": "数学可视化与动画生成",
+                        "tags": [
+                                "数学动画",
+                                "Manim",
+                                "交互网页",
+                                "开发工具",
+                                "MCP与插件"
+                        ]
                 }
         ],
         "CATEGORIES": [
