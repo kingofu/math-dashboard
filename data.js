@@ -2549,6 +2549,50 @@ const GLOBAL_DATA = {
                                 "开发工具",
                                 "MCP与插件"
                         ]
+                },
+                {
+                        "num": 186,
+                        "name": "grant-master",
+                        "url": "https://github.com/Lin-zhijie/grant-master",
+                        "description": "中文项目申请书全流程写作工具链。支持课题理解、文献调研、论文精读、方案收敛、大纲规划、正文写作、审阅与 docx 文档输出。",
+                        "stars": "8",
+                        "category_id": "paper_writing",
+                        "category_name": "论文写作与投稿",
+                        "tags": [
+                                "项目申请书",
+                                "学术科研",
+                                "正文写作",
+                                "文档自动化"
+                        ]
+                },
+                {
+                        "num": 187,
+                        "name": "OpenSpec",
+                        "url": "https://github.com/Fission-AI/OpenSpec",
+                        "description": "面向 AI 编程助手的规范驱动开发（SDD）框架。提倡在编写代码前先设计详尽的规范（Specification），让 AI 助手基于规范进行高准确率的编码和系统搭建。",
+                        "stars": "57.4k",
+                        "category_id": "agent_framework",
+                        "category_name": "智能体框架与平台",
+                        "tags": [
+                                "规范驱动",
+                                "AI编码",
+                                "开发工具",
+                                "智能体框架"
+                        ]
+                },
+                {
+                        "num": 188,
+                        "name": "ponytail",
+                        "url": "https://github.com/DietrichGebert/ponytail",
+                        "description": "AI 智能体开发辅助工具。让你的 AI 代理能够像极其经验丰富但极简克制的“懒惰高级开发人员”一样思考——提倡用最少的代码解决问题，避免过度设计。",
+                        "stars": "63.0k",
+                        "category_id": "agent_framework",
+                        "category_name": "智能体框架与平台",
+                        "tags": [
+                                "AI智能体",
+                                "极简编码",
+                                "开发工具"
+                        ]
                 }
         ],
         "CATEGORIES": [
