@@ -2593,6 +2593,21 @@ const GLOBAL_DATA = {
                                 "极简编码",
                                 "开发工具"
                         ]
+                },
+                {
+                        "num": 189,
+                        "name": "Claude-Code-Skills-for-Academics",
+                        "url": "https://github.com/aspi6246/Claude-Code-Skills-for-Academics",
+                        "description": "面向高校师生与科研人员的 AI 宣讲与培训素材包。主要包含讲解 Claude Code 学术应用的演示文稿 PPT/讲稿、Brownbag 技术分享指南（PDF）、软件界面配图以及学术编辑等虚拟角色（Personas）设定方案，可用于学术讲座与备课分享。",
+                        "stars": "136",
+                        "category_id": "teaching_prep",
+                        "category_name": "教案与备课工具",
+                        "tags": [
+                                "学术培训",
+                                "教案备课",
+                                "ClaudeCode",
+                                "学术科研"
+                        ]
                 }
         ],
         "CATEGORIES": [
