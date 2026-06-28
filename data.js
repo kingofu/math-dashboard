@@ -2598,8 +2598,23 @@ const GLOBAL_DATA = {
                         "num": 189,
                         "name": "Claude-Code-Skills-for-Academics",
                         "url": "https://github.com/aspi6246/Claude-Code-Skills-for-Academics",
-                        "description": "面向高校师生与科研人员的 AI 宣讲与培训素材包。主要包含讲解 Claude Code 学术应用的演示文稿 PPT/讲稿、Brownbag 技术分享指南（PDF）、软件界面配图以及学术编辑等虚拟角色（Personas）设定方案，可用于学术讲座与备课分享。",
+                        "description": "专为学术研究人员与高校师生打造的 Claude Code AI 技能实操教案与科研工作流工具箱。包含论文审查润色、Beamer 课件制作与自动检查、科研代码审计、实证金融数据画像（含 R 语言高维固定效应回归模版）以及 Canvas LMS 教务系统自动化对接等实战指南。",
                         "stars": "136",
+                        "category_id": "agent_integration",
+                        "category_name": "MCP/插件与技能集成",
+                        "tags": [
+                                "学术培训",
+                                "教案备课",
+                                "ClaudeCode",
+                                "学术科研"
+                        ]
+                },
+                {
+                        "num": 190,
+                        "name": "Claude-Code-Presentation",
+                        "url": "https://github.com/aspi6246/Claude-Code-Presentation",
+                        "description": "面向学术界与高校师生介绍和培训 Claude Code 的全套宣讲素材包。包含培训演示文稿、Brownbag 技术分享指南（PDF）、软件界面与矩阵对比配图以及编辑器等角色画像说明文档。",
+                        "stars": "410",
                         "category_id": "teaching_prep",
                         "category_name": "教案与备课工具",
                         "tags": [
