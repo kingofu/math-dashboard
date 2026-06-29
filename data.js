@@ -2623,6 +2623,21 @@ const GLOBAL_DATA = {
                                 "ClaudeCode",
                                 "学术科研"
                         ]
+                },
+                {
+                        "num": 191,
+                        "name": "paperseek",
+                        "url": "https://github.com/MingfengHong/paperseek",
+                        "description": "基于 LLM 的学术文献发现与检索智能体。支持通过自然语言输入研究意图，自动生成并迭代校准检索式，抓取并整理 OpenAlex、Crossref 和 WoS 的元数据，用 LLM 排序过滤，同时支持扩展引用网络并导出可复核结果。",
+                        "stars": "129",
+                        "category_id": "literature_retrieval",
+                        "category_name": "文献检索与阅读",
+                        "tags": [
+                                "文献检索",
+                                "RAG",
+                                "学术科研",
+                                "AI智能体"
+                        ]
                 }
         ],
         "CATEGORIES": [
