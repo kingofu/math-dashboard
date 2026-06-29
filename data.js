@@ -1294,13 +1294,14 @@ const GLOBAL_DATA = {
                         "num": 98,
                         "name": "science-superpowers",
                         "url": "https://github.com/K-Dense-AI/science-superpowers",
-                        "description": "面向 AI 研究智能体的可组合计算科学方法论技能包，基于预注册范式的科学领域 Superpowers 重新实现",
-                        "stars": "220",
+                        "description": "面向 AI 科研智能体的可组合计算科学方法论技能包。提倡基于预注册（Pre-registration）设计范式，提供科学研究领域的底层系统支撑与可复用算法逻辑。",
+                        "stars": "224",
                         "category_id": "agent_framework",
                         "category_name": "智能体框架与平台",
                         "tags": [
                                 "学术科研",
-                                "AI智能体"
+                                "AI智能体",
+                                "开发工具"
                         ]
                 },
                 {
@@ -2639,6 +2640,21 @@ const GLOBAL_DATA = {
                                 "RAG",
                                 "学术科研",
                                 "AI智能体"
+                        ]
+                },
+                {
+                        "num": 192,
+                        "name": "scientific-agent-skills",
+                        "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+                        "description": "面向科学发现与学术科研的 AI 智能体顶级技能库。内置 140 多个开箱即用的专业科研技能以及 100 多个涵盖生物、化学、医疗及药物发现的科学数据库连接，兼容 Cursor、Claude Code 等各大主流 AI 工具。",
+                        "stars": "29.6k",
+                        "category_id": "agent_integration",
+                        "category_name": "MCP/插件与技能集成",
+                        "tags": [
+                                "学术科研",
+                                "智能助教",
+                                "MCP与插件",
+                                "开发工具"
                         ]
                 }
         ],
