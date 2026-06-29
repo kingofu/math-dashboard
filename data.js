@@ -1130,15 +1130,17 @@ const GLOBAL_DATA = {
                 },
                 {
                         "num": 86,
-                        "name": "Grant Writer",
+                        "name": "claude-scientific-writer",
                         "url": "https://github.com/K-Dense-AI/claude-scientific-writer",
-                        "description": "科研项目基金申请书（Grant）撰写助手，适配 NSF、NIH 等多机构规范，辅助生成研究方案和经费预算说明。",
+                        "description": "基于 Claude Code 的通用学术与科学文献写作助手。支持针对 Nature、Science、Cell 等顶级期刊以及 NSF、NIH 等资助机构进行规范格式化排版，在生成正文前通过 Perplexity 实时检索并核实参考文献真实性以防幻觉。",
                         "stars": "2k",
                         "category_id": "paper_writing",
                         "category_name": "论文写作与投稿",
                         "tags": [
+                                "学术科研",
                                 "论文写作",
-                                "学术科研"
+                                "开发工具",
+                                "MCP与插件"
                         ]
                 },
                 {
