@@ -1078,7 +1078,7 @@ const GLOBAL_DATA = {
                 },
                 {
                         "num": 82,
-                        "name": "LaTeX Writer",
+                        "name": "lmms-lab-writer",
                         "url": "https://github.com/EvolvingLMMs-Lab/lmms-lab-writer",
                         "description": "面向 LaTeX 学术论文排版与自动生成的协作编写助手，支持数学公式、表格及 BibTeX 引用的一键生成和校验。",
                         "stars": "231",
@@ -1117,7 +1117,7 @@ const GLOBAL_DATA = {
                 },
                 {
                         "num": 85,
-                        "name": "Survey Builder",
+                        "name": "survey-creator",
                         "url": "https://github.com/surveyjs/survey-creator",
                         "description": "学术调研与问卷设计自动生成器，能够根据研究主题快速生成符合统计规范的结构化 JSON 问卷。",
                         "stars": "1.3k",
