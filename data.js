@@ -2656,6 +2656,36 @@ const GLOBAL_DATA = {
                                 "MCP与插件",
                                 "开发工具"
                         ]
+                },
+                {
+                        "num": 193,
+                        "name": "de-ai-writing",
+                        "url": "https://github.com/tmacsyf/my_skills/tree/master/paper-skills/de-ai-writing",
+                        "description": "基于 Codex 技能体系的学术论文 AI 痕迹扫描与修正工具。针对破折号滥用、伪转折、空洞句尾拔高等 10 条典型的 AI 生成写作模式实施精准扫描，提供修改建议报告并支持原位 LaTeX 排版修正。",
+                        "stars": "0",
+                        "category_id": "academic_polish",
+                        "category_name": "学术润色与去AI化",
+                        "tags": [
+                                "学术润色",
+                                "去AI化",
+                                "论文修改",
+                                "MCP与插件"
+                        ]
+                },
+                {
+                        "num": 194,
+                        "name": "anti-defensive-writing",
+                        "url": "https://github.com/Kiterlin/anti-defensive-writing",
+                        "description": "基于 Codex 技能体系的学术论文与专业文本“反防御性写作”审查和修改工具。自动识别并修正文本中不必要的免责声明、犹豫表达与过度解释，使表述更直接、更具论证姿态。",
+                        "stars": "9",
+                        "category_id": "academic_polish",
+                        "category_name": "学术润色与去AI化",
+                        "tags": [
+                                "学术润色",
+                                "论文写作",
+                                "开发工具",
+                                "MCP与插件"
+                        ]
                 }
         ],
         "CATEGORIES": [
