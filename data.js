@@ -321,9 +321,9 @@ const GLOBAL_DATA = {
                 {
                         "num": 25,
                         "name": "Understand-Anything",
-                        "url": "https://github.com/opencode-skills/Understand-Anything",
+                        "url": "https://github.com/Egonex-AI/Understand-Anything",
                         "description": "将代码库转化为交互式知识图谱的 Claude Code 插件。通过多智能体管道分析代码结构，构建可视化项目地图，支持架构导览、自然语言问答、变更影响分析，适配 Claude Code/Cursor/Codex/Gemini CLI 等多平台。",
-                        "stars": "1k+",
+                        "stars": "69.6k",
                         "category_id": "agent_framework",
                         "category_name": "智能体框架与平台",
                         "tags": [
