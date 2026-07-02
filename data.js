@@ -2660,6 +2660,36 @@ const GLOBAL_DATA = {
                                 "开发工具",
                                 "MCP与插件"
                         ]
+                },
+                {
+                        "num": 193,
+                        "name": "lean4-skills",
+                        "url": "https://github.com/cameronfreer/lean4-skills",
+                        "description": "面向 AI 编码智能体的 Lean 4 定理证明技能与工作流套件。提供结构化的证明/审查/高尔夫循环、mathlib 搜索、公理检查和安全护栏，兼容 Claude Code、Codex、Gemini CLI、Cursor 等多种宿主平台。",
+                        "stars": "315",
+                        "category_id": "math_modeling",
+                        "category_name": "形式化数学与数模竞赛",
+                        "tags": [
+                                "Lean4",
+                                "定理证明",
+                                "AI智能体",
+                                "MCP与插件"
+                        ]
+                },
+                {
+                        "num": 194,
+                        "name": "lean-lsp-mcp",
+                        "url": "https://github.com/oOo0oOo/lean-lsp-mcp",
+                        "description": "基于语言服务器协议（LSP）的 Lean 定理证明器 MCP 服务端。支持 LLM 智能体与 Lean 项目进行丰富交互，包括获取诊断信息、目标状态、项信息和悬停文档，并内置 LeanSearch、Loogle 等外部定理搜索工具。",
+                        "stars": "423",
+                        "category_id": "agent_integration",
+                        "category_name": "MCP/插件与技能集成",
+                        "tags": [
+                                "Lean4",
+                                "MCP与插件",
+                                "定理证明",
+                                "开发工具"
+                        ]
                 }
         ],
         "CATEGORIES": [
