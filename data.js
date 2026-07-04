@@ -2690,6 +2690,21 @@ const GLOBAL_DATA = {
                                 "定理证明",
                                 "开发工具"
                         ]
+                },
+                {
+                        "num": 195,
+                        "name": "Leanstral 1.5",
+                        "url": "https://github.com/mistralai/LeanstralSafeVerify",
+                        "description": "Mistral AI 发布的专用于 Lean 4 形式化证明的开源 MoE 大模型（119B 总参数 / 6B 激活）。在 miniF2F、PutnamBench 等基准上达到 SOTA，支持自动生成正确性属性并证明/反证，已在真实 Rust 代码库中发现未报告的 Bug。Apache-2.0 协议开源，提供免费 API。",
+                        "stars": "6",
+                        "category_id": "math_modeling",
+                        "category_name": "形式化数学与数模竞赛",
+                        "tags": [
+                                "Lean4",
+                                "定理证明",
+                                "AI智能体",
+                                "开源模型"
+                        ]
                 }
         ],
         "CATEGORIES": [
