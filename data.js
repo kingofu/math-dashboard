@@ -2705,6 +2705,21 @@ const GLOBAL_DATA = {
                                 "AI智能体",
                                 "开源模型"
                         ]
+                },
+                {
+                        "num": 196,
+                        "name": "planning-with-files",
+                        "url": "https://github.com/OthmanAdi/planning-with-files",
+                        "description": "面向 AI 编程智能体的持久化文件级规划工具。提供防崩溃的 markdown 计划记录，能跨上下文丢失或清空操作持久留存，并支持基于磁盘的多智能体共享状态与确定性完成门控，兼容 Claude Code、Cursor 等各大主流智能体。",
+                        "stars": "24.5k",
+                        "category_id": "agent_integration",
+                        "category_name": "MCP/插件与技能集成",
+                        "tags": [
+                                "AI智能体",
+                                "规划工具",
+                                "MCP与插件",
+                                "开发工具"
+                        ]
                 }
         ],
         "CATEGORIES": [
