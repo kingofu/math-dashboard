@@ -2720,6 +2720,21 @@ const GLOBAL_DATA = {
                                 "MCP与插件",
                                 "开发工具"
                         ]
+                },
+                {
+                        "num": 197,
+                        "name": "VeryMath",
+                        "url": "https://verymath.github.io/",
+                        "description": "面向 AI 辅助数学研究的开源平台。致力于构建可复用、可验证、可协作的科研工作流，覆盖论文阅读（提取证明依赖与定理结构）、计算数学（数值实验与符号检验）、Lean 4 形式化验证以及自动化研究演化。",
+                        "stars": "N/A",
+                        "category_id": "math_modeling",
+                        "category_name": "形式化数学与数模竞赛",
+                        "tags": [
+                                "数学科研",
+                                "Lean4",
+                                "计算数学",
+                                "AI智能体"
+                        ]
                 }
         ],
         "CATEGORIES": [
