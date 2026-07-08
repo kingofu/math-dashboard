@@ -2735,6 +2735,21 @@ const GLOBAL_DATA = {
                                 "计算数学",
                                 "AI智能体"
                         ]
+                },
+                {
+                        "num": 198,
+                        "name": "LaTeXSnipper",
+                        "url": "https://github.com/SakuraMathcraft/LaTeXSnipper",
+                        "description": "功能强大的数学工作区与文档转换工具。支持屏幕截图 OCR、手写识别转 LaTeX 公式、Word/Office 插件式编辑以及基于 MathCraft OCR 与 MathLive 驱动的符号计算。",
+                        "stars": "443",
+                        "category_id": "doc_conversion",
+                        "category_name": "文档转换与内容解析",
+                        "tags": [
+                                "公式识别",
+                                "文档自动化",
+                                "LaTeX",
+                                "数学计算"
+                        ]
                 }
         ],
         "CATEGORIES": [
