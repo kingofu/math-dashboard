@@ -2750,6 +2750,21 @@ const GLOBAL_DATA = {
                                 "LaTeX",
                                 "数学计算"
                         ]
+                },
+                {
+                        "num": 199,
+                        "name": "Academic Figure Skill",
+                        "url": "https://github.com/TingxiYu/academic-figure-skill",
+                        "description": "以“问题驱动而非模板驱动”为核心原则的学术配图技能包。每一张图从科学问题出发，通过 8 步闭环工作流（用户意图解析 → 原型分类 → 图型论证 → 环境探测 → 风格注入 → 资产检索 → 渲染生成 → 质量验证），输出可直接投稿的矢量 PDF 主文件 + 300dpi PNG 预览 + 统计报告。",
+                        "stars": "3",
+                        "category_id": "visualization",
+                        "category_name": "数学可视化与动画生成",
+                        "tags": [
+                                "学术绘图",
+                                "论文配图",
+                                "开发工具",
+                                "MCP与插件"
+                        ]
                 }
         ],
         "CATEGORIES": [
