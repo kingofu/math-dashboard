@@ -2765,6 +2765,21 @@ const GLOBAL_DATA = {
                                 "开发工具",
                                 "MCP与插件"
                         ]
+                },
+                {
+                        "num": 200,
+                        "name": "Mrite",
+                        "url": "https://github.com/Rzna-5559/Mrite",
+                        "description": "专为国赛、美赛、MathorCup 等数学建模竞赛设计的 Claude Code 技能项目模板。放入赛题和附件数据后，AI 即可自动完成读取题目与附件、规划求解计划、编写 Python 代码求解并绘图、撰写含摘要和参考文献的 LaTeX 论文并自动编译排版为 PDF 且修复报错。",
+                        "stars": "97",
+                        "category_id": "math_modeling",
+                        "category_name": "形式化数学与数模竞赛",
+                        "tags": [
+                                "数学建模",
+                                "LaTeX",
+                                "Python求解",
+                                "MCP与插件"
+                        ]
                 }
         ],
         "CATEGORIES": [
