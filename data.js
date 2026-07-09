@@ -2780,6 +2780,21 @@ const GLOBAL_DATA = {
                                 "Python求解",
                                 "MCP与插件"
                         ]
+                },
+                {
+                        "num": 201,
+                        "name": "中国大学生在线 - 数学建模专题",
+                        "url": "https://dxs.moe.gov.cn/zx/hd/sxjm/",
+                        "description": "教育部“中国大学生在线”全国大学生数学建模竞赛（CUMCM，高教社杯）官方合作专题平台。权威发布历届赛题下载、获奖名单、优秀论文展示、赛题讲评课、数模慕课及备赛经验分享。",
+                        "stars": "N/A",
+                        "category_id": "math_modeling",
+                        "category_name": "形式化数学与数模竞赛",
+                        "tags": [
+                                "数学建模",
+                                "备赛资源",
+                                "官方竞赛",
+                                "优秀论文"
+                        ]
                 }
         ],
         "CATEGORIES": [
