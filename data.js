@@ -2795,6 +2795,36 @@ const GLOBAL_DATA = {
                                 "官方竞赛",
                                 "优秀论文"
                         ]
+                },
+                {
+                        "num": 202,
+                        "name": "Idea2Paper",
+                        "url": "https://github.com/AgentAlphaAGI/Idea2Paper",
+                        "description": "端到端学术论文研究与写作智能体框架。通过显式分解科研阶段并引入契约化多智能体协作机制，将研究构想转化为逻辑严密、学术规范的学术叙事，重点解决科学范式生成与 argumentative 一致性挑战。",
+                        "stars": "1.4k",
+                        "category_id": "paper_writing",
+                        "category_name": "论文写作与投稿",
+                        "tags": [
+                                "学术科研",
+                                "论文写作",
+                                "AI智能体",
+                                "智能体框架"
+                        ]
+                },
+                {
+                        "num": 203,
+                        "name": "Auto-claude-code-research-in-sleep",
+                        "url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+                        "description": "ARIS (Auto-Research-In-Sleep) 是一款轻量级、免框架的自主机器学习研究工作流与智能体技能集。支持跨模型评审循环、构想发现与实验自动化，深度适配 Claude Code、Antigravity 等编程助手以实现无人值守的科研探索。",
+                        "stars": "13.3k",
+                        "category_id": "agent_framework",
+                        "category_name": "智能体框架与平台",
+                        "tags": [
+                                "学术科研",
+                                "AI智能体",
+                                "ML研究",
+                                "开发工具"
+                        ]
                 }
         ],
         "CATEGORIES": [
