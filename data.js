@@ -257,8 +257,8 @@ const GLOBAL_DATA = {
                         "url": "https://github.com/Imbad0202/academic-research-skills",
                         "description": "集成 Deep Research（13-agent）和 Academic Paper（12-agent）等多智能体团队，覆盖文献综述、论文撰写、模拟评审和质量门禁。",
                         "stars": "37.9k",
-                        "category_id": "academic_writing",
-                        "category_name": "论文分析与写作辅助",
+                        "category_id": "paper_writing",
+                        "category_name": "论文写作与投稿",
                         "tags": [
                                 "学术科研",
                                 "论文写作"
@@ -350,8 +350,8 @@ const GLOBAL_DATA = {
                         "url": "https://github.com/hardikpandya/stop-slop",
                         "description": "旨在消除大模型写作痕迹（去 AI 感）的系统规则与提示词集合，帮助用户润色、精简和重写文本，使其符合纯正的人类表达习惯。",
                         "stars": "13.9k",
-                        "category_id": "academic_polish",
-                        "category_name": "学术润色与去AI化",
+                        "category_id": "paper_writing",
+                        "category_name": "论文写作与投稿",
                         "tags": [
                                 "通用工具",
                                 "学术润色",
@@ -431,8 +431,8 @@ const GLOBAL_DATA = {
                         "url": "https://github.com/op7418/Humanizer-zh",
                         "description": "消除中文写作中的 AI 痕迹，润色文本以模仿人类风格的去 AI 化工具。",
                         "stars": "13.2k",
-                        "category_id": "academic_polish",
-                        "category_name": "学术润色与去AI化",
+                        "category_id": "paper_writing",
+                        "category_name": "论文写作与投稿",
                         "tags": [
                                 "学术润色",
                                 "论文写作"
@@ -1095,8 +1095,8 @@ const GLOBAL_DATA = {
                         "url": "https://github.com/surveyjs/survey-creator",
                         "description": "学术调研与问卷设计自动生成器，能够根据研究主题快速生成符合统计规范的结构化 JSON 问卷。",
                         "stars": "1.3k",
-                        "category_id": "academic_writing",
-                        "category_name": "论文分析与写作辅助",
+                        "category_id": "paper_writing",
+                        "category_name": "论文写作与投稿",
                         "tags": [
                                 "学术科研",
                                 "论文写作"
@@ -2637,8 +2637,8 @@ const GLOBAL_DATA = {
                         "url": "https://github.com/tmacsyf/my_skills/tree/master/paper-skills/de-ai-writing",
                         "description": "基于 Codex 技能体系的学术论文 AI 痕迹扫描与修正工具。针对破折号滥用、伪转折、空洞句尾拔高等 10 条典型的 AI 生成写作模式实施精准扫描，提供修改建议报告并支持原位 LaTeX 排版修正。",
                         "stars": "0",
-                        "category_id": "academic_polish",
-                        "category_name": "学术润色与去AI化",
+                        "category_id": "paper_writing",
+                        "category_name": "论文写作与投稿",
                         "tags": [
                                 "学术润色",
                                 "去AI化",
@@ -2652,8 +2652,8 @@ const GLOBAL_DATA = {
                         "url": "https://github.com/Kiterlin/anti-defensive-writing",
                         "description": "基于 Codex 技能体系的学术论文与专业文本“反防御性写作”审查和修改工具。自动识别并修正文本中不必要的免责声明、犹豫表达与过度解释，使表述更直接、更具论证姿态。",
                         "stars": "46",
-                        "category_id": "academic_polish",
-                        "category_name": "学术润色与去AI化",
+                        "category_id": "paper_writing",
+                        "category_name": "论文写作与投稿",
                         "tags": [
                                 "学术润色",
                                 "论文写作",
@@ -2892,8 +2892,8 @@ const GLOBAL_DATA = {
                         "url": "https://github.com/Master-cai/Research-Paper-Writing-Skills",
                         "description": "专为 AI 编码助手（如 Claude Code/Codex）优化的学术论文段落精修与写作技能集。支持针对摘要、引言、方法论到结论的细粒度逻辑重构与学术化表达润色。",
                         "stars": "5.2k",
-                        "category_id": "academic_polish",
-                        "category_name": "学术润色与去AI化",
+                        "category_id": "paper_writing",
+                        "category_name": "论文写作与投稿",
                         "tags": [
                                 "学术润色",
                                 "论文写作",
@@ -2956,14 +2956,6 @@ const GLOBAL_DATA = {
                 {
                         "id": "paper_writing",
                         "name": "论文写作与投稿"
-                },
-                {
-                        "id": "academic_polish",
-                        "name": "学术润色与去AI化"
-                },
-                {
-                        "id": "academic_writing",
-                        "name": "其他论文分析与写作辅助"
                 },
                 {
                         "id": "math_modeling",
