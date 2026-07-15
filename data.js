@@ -2825,6 +2825,21 @@ const GLOBAL_DATA = {
                                 "ML研究",
                                 "开发工具"
                         ]
+                },
+                {
+                        "num": 204,
+                        "name": "dashi-ppt-skill",
+                        "url": "https://github.com/chuspeeism/dashi-ppt-skill",
+                        "description": "面向 AI 智能体的幻灯片生成与演示技能包。支持从多种视觉主题生成可在浏览器中直接编辑的演示文稿，并可导出为 HTML、PDF 和 PPTX 格式。",
+                        "stars": "3.1k",
+                        "category_id": "slide_generation",
+                        "category_name": "幻灯片生成与演示",
+                        "tags": [
+                                "PPT生成",
+                                "幻灯片",
+                                "AI智能体",
+                                "开发工具"
+                        ]
                 }
         ],
         "CATEGORIES": [
