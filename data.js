@@ -2840,6 +2840,96 @@ const GLOBAL_DATA = {
                                 "AI智能体",
                                 "开发工具"
                         ]
+                },
+                {
+                        "num": 205,
+                        "name": "academic-research-skills-codex",
+                        "url": "https://github.com/Imbad0202/academic-research-skills-codex",
+                        "description": "学术研究技能套件（ARS）的 Codex 平台专属分发版本。将原生的科研多智能体工作流打包为单个 Codex 规范技能（SKILL.md），免除 Claude Code 插件依赖，便于在 Codex 等通用智能体终端一键运行。",
+                        "stars": "11",
+                        "category_id": "agent_integration",
+                        "category_name": "MCP/插件与技能集成",
+                        "tags": [
+                                "学术科研",
+                                "Codex",
+                                "AI智能体",
+                                "开发工具"
+                        ]
+                },
+                {
+                        "num": 206,
+                        "name": "latex-paper",
+                        "url": "https://github.com/pmichaillat/latex-paper",
+                        "description": "极其推崇学术论文排版最佳实践的极简 LaTeX 模板项目。提供高度结构化的文档目录与整洁的一句一行（One-sentence-per-line）差分格式，非常适合作为高水平学术论文的排版起点。",
+                        "stars": "135",
+                        "category_id": "formatting",
+                        "category_name": "其他文档自动化",
+                        "tags": [
+                                "LaTeX模板",
+                                "学术论文",
+                                "排版规范",
+                                "写作辅助"
+                        ]
+                },
+                {
+                        "num": 207,
+                        "name": "Nature-Paper-Skills",
+                        "url": "https://github.com/Boom5426/Nature-Paper-Skills",
+                        "description": "专为 Nature 及其子刊投稿设计的 AI 智能体论文写作与编辑技能包。涵盖科学问题梳理、图表论证规划、参考文献卫生检查以及同行评审意见自动回复等全生命周期写作辅助。",
+                        "stars": "8",
+                        "category_id": "paper_writing",
+                        "category_name": "论文写作与投稿",
+                        "tags": [
+                                "Nature",
+                                "论文修改",
+                                "AI智能体",
+                                "MCP与插件"
+                        ]
+                },
+                {
+                        "num": 208,
+                        "name": "Research-Paper-Writing-Skills",
+                        "url": "https://github.com/Master-cai/Research-Paper-Writing-Skills",
+                        "description": "专为 AI 编码助手（如 Claude Code/Codex）优化的学术论文段落精修与写作技能集。支持针对摘要、引言、方法论到结论的细粒度逻辑重构与学术化表达润色。",
+                        "stars": "12",
+                        "category_id": "academic_polish",
+                        "category_name": "学术润色与去AI化",
+                        "tags": [
+                                "学术润色",
+                                "论文写作",
+                                "开发工具",
+                                "MCP与插件"
+                        ]
+                },
+                {
+                        "num": 209,
+                        "name": "claude-scholar",
+                        "url": "https://github.com/Galaxy-Dawn/claude-scholar",
+                        "description": "专为 Claude Code 打造的半自动化科研与实验开发智能体助手。内置 30+ 技能和 50+ 扩展指令，全面覆盖科研灵感发现、代码实验运行、论文大纲写作到最终投稿审查的闭环流程。",
+                        "stars": "145",
+                        "category_id": "agent_framework",
+                        "category_name": "智能体框架与平台",
+                        "tags": [
+                                "学术科研",
+                                "ClaudeCode",
+                                "AI智能体",
+                                "开发工具"
+                        ]
+                },
+                {
+                        "num": 210,
+                        "name": "literature-survey-skill",
+                        "url": "https://github.com/SNL-UCSB/literature-survey-skill",
+                        "description": "专为 Claude Code 开发的文献综述与学科现状快速调研技能。可自动化抓取指定学术库、抽取关键研究脉络并导出为结构化的文献对比矩阵与综述大纲报告。",
+                        "stars": "16",
+                        "category_id": "literature_retrieval",
+                        "category_name": "文献检索与阅读",
+                        "tags": [
+                                "文献检索",
+                                "文献综述",
+                                "AI智能体",
+                                "MCP与插件"
+                        ]
                 }
         ],
         "CATEGORIES": [
