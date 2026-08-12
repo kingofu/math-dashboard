@@ -1910,20 +1910,6 @@ const GLOBAL_DATA = {
                 },
                 {
                         "num": 142,
-                        "name": "multica-ai/andrej-karpathy-skills",
-                        "url": "https://github.com/multica-ai/andrej-karpathy-skills",
-                        "description": "受 Andrej Karpathy 理念启发的 AI 技能集合，聚焦深度学习、LLM 训练与 AI 教育，提供可复用的教学与研究技能包。",
-                        "stars": "192.5k",
-                        "category_id": "agent_integration",
-                        "category_name": "MCP/插件与技能集成",
-                        "tags": [
-                                "开发工具",
-                                "MCP与插件",
-                                "学术科研"
-                        ]
-                },
-                {
-                        "num": 143,
                         "name": "jztan/pdf-mcp",
                         "url": "https://github.com/jztan/pdf-mcp",
                         "description": "基于 MCP 协议的 PDF 处理服务器，支持 AI Agent 通过标准 MCP 接口读写、解析和操作 PDF 文件，打通 Agent 与 PDF 数据的交互。",
@@ -1937,7 +1923,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 144,
+                        "num": 143,
                         "name": "alibaba/zvec",
                         "url": "https://github.com/alibaba/zvec",
                         "description": "阿里巴巴开源的向量数据库，专为 AI 智能体设计的高性能嵌入式向量存储，支持混合搜索与大规模相似性检索。",
@@ -1951,7 +1937,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 145,
+                        "num": 144,
                         "name": "TapXWorld/ChinaTextbook",
                         "url": "https://github.com/TapXWorld/ChinaTextbook",
                         "description": "覆盖小初高全学科的 PDF 教材合集，按年级与科目分类整理，供教师与学生免费查阅与下载。",
@@ -1964,7 +1950,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 146,
+                        "num": 145,
                         "name": "FrogGuaGuaGua/HighSchoolMathematics",
                         "url": "https://github.com/FrogGuaGuaGua/HighSchoolMathematics",
                         "description": "高中数学知识点系统梳理与可视化讲解项目，涵盖代数、几何、概率等核心模块，配有图文解释与例题。",
@@ -1978,7 +1964,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 147,
+                        "num": 146,
                         "name": "wmjordan/PDFPatcher",
                         "url": "https://github.com/wmjordan/PDFPatcher",
                         "description": "功能强大的 PDF 处理工具箱，支持书签编辑、页面提取与合并、OCR 识别、元数据修改、压缩优化等 30+ 实用功能。",
@@ -1991,7 +1977,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 148,
+                        "num": 147,
                         "name": "yhwu-is/Linear-Algebra-Left-Undone",
                         "url": "https://github.com/yhwu-is/Linear-Algebra-Left-Undone",
                         "description": "面向 AI 与数据科学的线性代数教材，注重直觉理解与代码实现，覆盖矩阵运算、特征分解、SVD 等核心内容。",
@@ -2005,7 +1991,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 149,
+                        "num": 148,
                         "name": "gaokaomath",
                         "url": "https://github.com/deekur/gaokaomath",
                         "description": "历年高考数学真题合集与解答，包含全国卷及北京、上海、天津等各省市高考数学真题，持续更新。",
@@ -2019,7 +2005,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 150,
+                        "num": 149,
                         "name": "Unlimited-OCR",
                         "url": "https://github.com/baidu/Unlimited-OCR",
                         "description": "百度开源的长文本/多页文档 OCR 解析模型。采用参考滑动窗口注意力（R-SWA）技术，实现恒定的 KV Cache，支持一键对数十页的超长 PDF/图像进行高效排版与公式转写。",
@@ -2034,7 +2020,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 151,
+                        "num": 150,
                         "name": "AutoFigure-Edit",
                         "url": "https://github.com/ResearAI/AutoFigure-Edit",
                         "description": "基于 LLM 的学术论文插图自动生成与编辑系统。能够将论文的方法论章节（Method Section）直接转化为完全可编辑的矢量 SVG 图表，并内置可视化编辑器，支持一键模仿目标论文插图的视觉风格。",
@@ -2049,7 +2035,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 152,
+                        "num": 151,
                         "name": "html-presentation",
                         "url": "https://github.com/juanjuanjie/html-presentation",
                         "description": "基于 HTML 的技术与学术课程演示文稿制作工具，支持使用 Web 标准技术快速构建响应式、交互式的幻灯片。",
@@ -2063,7 +2049,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 153,
+                        "num": 152,
                         "name": "llm-for-zotero",
                         "url": "https://github.com/yilewang/llm-for-zotero",
                         "description": "基于 Zotero 文献库的学术科研智能体（Research Agent）。支持对本地文献进行高精度检索与问答，通过 MCP 协议与文献管理系统深度融合，构建可溯源的 RAG 文献问答与综述工作流。",
@@ -2078,7 +2064,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 154,
+                        "num": 153,
                         "name": "Math-model-skills",
                         "url": "https://github.com/WuXinbo-bo/Math-model-skills",
                         "description": "数学建模竞赛智能体工程群。基于 14 阶段流水线、7 种角色以及 35 个门禁规则设计的数学建模自动化智能体系统。",
@@ -2093,7 +2079,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 155,
+                        "num": 154,
                         "name": "Light-skills",
                         "url": "https://github.com/Light0305/Light-skills",
                         "description": "Light —— 全流程科研技能包。包含 28 个覆盖文献调研到投稿全流程的实用技能，配套 9 个可核查知识库，完美适配主流 AI 编程客户端。",
@@ -2108,7 +2094,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 156,
+                        "num": 155,
                         "name": "awesome-geogebra-ai",
                         "url": "https://github.com/Ceiei/awesome-geogebra-ai",
                         "description": "GeoGebra + AI 数学题可视化工具，将大模型与动态数学软件相结合，自动生成数学几何题的可视化图形与交互内容。",
@@ -2135,7 +2121,7 @@ const GLOBAL_DATA = {
                                 "开发工具",
                                 "MCP与插件"
                         ],
-                        "num": 157
+                        "num": 156
                 },
                 {
                         "name": "chengfeng-videocut-skills",
@@ -2150,7 +2136,7 @@ const GLOBAL_DATA = {
                                 "MCP与插件",
                                 "开发工具"
                         ],
-                        "num": 158
+                        "num": 157
                 },
                 {
                         "name": "tutor-skills",
@@ -2165,7 +2151,7 @@ const GLOBAL_DATA = {
                                 "文档自动化",
                                 "MCP与插件"
                         ],
-                        "num": 159
+                        "num": 158
                 },
                 {
                         "name": "sift-kg",
@@ -2180,7 +2166,7 @@ const GLOBAL_DATA = {
                                 "学术科研",
                                 "开发工具"
                         ],
-                        "num": 160
+                        "num": 159
                 },
                 {
                         "name": "deepx-code",
@@ -2195,7 +2181,7 @@ const GLOBAL_DATA = {
                                 "代码图谱",
                                 "开发工具"
                         ],
-                        "num": 161
+                        "num": 160
                 },
                 {
                         "name": "visual-ip-illustrations",
@@ -2210,7 +2196,7 @@ const GLOBAL_DATA = {
                                 "开发工具",
                                 "MCP与插件"
                         ],
-                        "num": 162
+                        "num": 161
                 },
                 {
                         "name": "bili-note",
@@ -2225,7 +2211,7 @@ const GLOBAL_DATA = {
                                 "数学教育",
                                 "智能助教"
                         ],
-                        "num": 163
+                        "num": 162
                 },
                 {
                         "name": "tex2word",
@@ -2240,7 +2226,7 @@ const GLOBAL_DATA = {
                                 "文档自动化",
                                 "学术科研"
                         ],
-                        "num": 164
+                        "num": 163
                 },
                 {
                         "name": "Scientific-research-SKILL",
@@ -2255,7 +2241,7 @@ const GLOBAL_DATA = {
                                 "MCP与插件",
                                 "开发工具"
                         ],
-                        "num": 165
+                        "num": 164
                 },
                 {
                         "name": "scholay/skills",
@@ -2270,10 +2256,10 @@ const GLOBAL_DATA = {
                                 "MCP与插件",
                                 "开发工具"
                         ],
-                        "num": 166
+                        "num": 165
                 },
                 {
-                        "num": 167,
+                        "num": 166,
                         "name": "geometry-assistant",
                         "url": "https://github.com/mindbeam-vc/geometry-assistant",
                         "description": "立体几何 3D 可视化辅助教学与解题工具。支持将立体几何题目（点、线、面及约束条件）数据渲染为交互式 3D 场景，生成自包含 HTML 文件以供旋转、缩放和渐进式解题展示，适配主流 AI 编程客户端。",
@@ -2288,7 +2274,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 168,
+                        "num": 167,
                         "name": "paint-doodle",
                         "url": "https://github.com/Mixiaxiaoyu/paint-doodle",
                         "description": "基于 Codex 技能体系（Skills）的 MS Paint 潦草手绘插画生成器。专门用于自动化生成具有“手绘与吐槽涂鸦感”的成语解释图、事件示意图或荒诞小故事插画。",
@@ -2303,7 +2289,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 169,
+                        "num": 168,
                         "name": "word-mathtype-docx",
                         "url": "https://github.com/zhs7gmzw2t-debug/word-mathtype-docx",
                         "description": "Word 文档公式自动化转换工具与 Codex 技能包。支持将 .docx 文档中的 Office 原生公式（OMML）提取并转化为可编辑的 MathType OLE 对象，内置 MathML 校验与排版修复机制。",
@@ -2330,7 +2316,7 @@ const GLOBAL_DATA = {
                                 "知识图谱",
                                 "开发工具"
                         ],
-                        "num": 170
+                        "num": 169
                 },
                 {
                         "name": "ai-guide",
@@ -2345,7 +2331,7 @@ const GLOBAL_DATA = {
                                 "开源文档",
                                 "智能助教"
                         ],
-                        "num": 171
+                        "num": 170
                 },
                 {
                         "name": "hyperframes",
@@ -2360,7 +2346,7 @@ const GLOBAL_DATA = {
                                 "AI智能体",
                                 "开发工具"
                         ],
-                        "num": 172
+                        "num": 171
                 },
                 {
                         "name": "OpenMontage",
@@ -2375,7 +2361,7 @@ const GLOBAL_DATA = {
                                 "多智能体",
                                 "开发工具"
                         ],
-                        "num": 173
+                        "num": 172
                 },
                 {
                         "name": "video-podcast-maker",
@@ -2390,7 +2376,7 @@ const GLOBAL_DATA = {
                                 "AI智能体",
                                 "开发工具"
                         ],
-                        "num": 174
+                        "num": 173
                 },
                 {
                         "name": "penpot",
@@ -2405,7 +2391,7 @@ const GLOBAL_DATA = {
                                 "开源设计",
                                 "通用工具"
                         ],
-                        "num": 175
+                        "num": 174
                 },
                 {
                         "name": "horseMD",
@@ -2420,7 +2406,7 @@ const GLOBAL_DATA = {
                                 "Typora平替",
                                 "通用工具"
                         ],
-                        "num": 176
+                        "num": 175
                 },
                 {
                         "name": "Ameow",
@@ -2435,10 +2421,10 @@ const GLOBAL_DATA = {
                                 "创作者工具",
                                 "通用工具"
                         ],
-                        "num": 177
+                        "num": 176
                 },
                 {
-                        "num": 178,
+                        "num": 177,
                         "name": "agent-skills-playground",
                         "url": "https://github.com/matlab/agent-skills-playground",
                         "description": "MATLAB 官方提供的智能体技能沙箱。主要用于原型设计和演示适用于 MATLAB 及 Simulink 任务的 Agent 技能（Skills）。",
@@ -2453,7 +2439,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 179,
+                        "num": 178,
                         "name": "simulink-agentic-toolkit",
                         "url": "https://github.com/matlab/simulink-agentic-toolkit",
                         "description": "Simulink 智能体工具包，为 AI 智能体赋予了在 Simulink 环境中开展系统建模与仿真控制等系统级开发能力。",
@@ -2468,7 +2454,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 180,
+                        "num": 179,
                         "name": "rules (MATLAB)",
                         "url": "https://github.com/matlab/rules",
                         "description": "MATLAB 官方整理的 AI 编程辅助规则库。针对 Cursor、Windsurf、Claude Code 和 GitHub Copilot 等 AI 编程助手进行了优化，包含面向 MATLAB 开发的最佳实践与编码规范。",
@@ -2483,7 +2469,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 181,
+                        "num": 180,
                         "name": "prompts (MATLAB)",
                         "url": "https://github.com/matlab/prompts",
                         "description": "面向 MATLAB 开发的 AI 提示词（Prompts）精选合集。支持 MATLAB Copilot、GitHub Copilot、Claude 和 Cursor，涵盖实时脚本、信号处理、机器学习及控制系统等开发场景。",
@@ -2497,7 +2483,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 182,
+                        "num": 181,
                         "name": "matlab-mcp-server",
                         "url": "https://github.com/matlab/matlab-mcp-server",
                         "description": "MathWorks 官方推出的 MATLAB MCP 服务端。支持 AI 应用通过标准 MCP 协议直接调用本地 MATLAB，为 Claude Code 和 VS Code 等编程智能体提供代码运行与控制能力。",
@@ -2512,7 +2498,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 183,
+                        "num": 182,
                         "name": "mathVideoMaker",
                         "url": "https://github.com/GordenSun/mathVideoMaker",
                         "description": "基于 Cursor Agent 技能体系的数学视频与交互网页生成器。能够根据需求同步生成数学推导动画（基于 Manim 渲染为 MP4）与配套的交互式网页（自包含单 HTML，含 KaTeX 和 Canvas 交互），并提供机械化布局、缺字形检测及网页静态检查，保障无视觉能力大模型的生成质量。",
@@ -2528,7 +2514,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 184,
+                        "num": 183,
                         "name": "grant-master",
                         "url": "https://github.com/Lin-zhijie/grant-master",
                         "description": "中文项目申请书全流程写作工具链。支持课题理解、文献调研、论文精读、方案收敛、大纲规划、正文写作、审阅与 docx 文档输出。",
@@ -2543,7 +2529,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 185,
+                        "num": 184,
                         "name": "OpenSpec",
                         "url": "https://github.com/Fission-AI/OpenSpec",
                         "description": "面向 AI 编程助手的规范驱动开发（SDD）框架。提倡在编写代码前先设计详尽的规范（Specification），让 AI 助手基于规范进行高准确率的编码和系统搭建。",
@@ -2558,7 +2544,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 186,
+                        "num": 185,
                         "name": "ponytail",
                         "url": "https://github.com/DietrichGebert/ponytail",
                         "description": "AI 智能体开发辅助工具。让你的 AI 代理能够像极其经验丰富但极简克制的“懒惰高级开发人员”一样思考——提倡用最少的代码解决问题，避免过度设计。",
@@ -2572,7 +2558,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 187,
+                        "num": 186,
                         "name": "Claude-Code-Skills-for-Academics",
                         "url": "https://github.com/aspi6246/Claude-Code-Skills-for-Academics",
                         "description": "专为学术研究人员与高校师生打造的 Claude Code AI 技能实操教案与科研工作流工具箱。包含论文审查润色、Beamer 课件制作与自动检查、科研代码审计、实证金融数据画像（含 R 语言高维固定效应回归模版）以及 Canvas LMS 教务系统自动化对接等实战指南。",
@@ -2587,7 +2573,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 188,
+                        "num": 187,
                         "name": "Claude-Code-Presentation",
                         "url": "https://github.com/aspi6246/Claude-Code-Presentation",
                         "description": "面向学术界与高校师生介绍和培训 Claude Code 的全套宣讲素材包。包含培训演示文稿、Brownbag 技术分享指南（PDF）、软件界面与矩阵对比配图以及编辑器等角色画像说明文档。",
@@ -2602,7 +2588,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 189,
+                        "num": 188,
                         "name": "paperseek",
                         "url": "https://github.com/MingfengHong/paperseek",
                         "description": "基于 LLM 的学术文献发现与检索智能体。支持通过自然语言输入研究意图，自动生成并迭代校准检索式，抓取并整理 OpenAlex、Crossref 和 WoS 的元数据，用 LLM 排序过滤，同时支持扩展引用网络并导出可复核结果。",
@@ -2617,7 +2603,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 190,
+                        "num": 189,
                         "name": "scientific-agent-skills",
                         "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
                         "description": "面向科学发现与学术科研的 AI 智能体顶级技能库。内置 140 多个开箱即用的专业科研技能以及 100 多个涵盖生物、化学、医疗及药物发现的科学数据库连接，兼容 Cursor、Claude Code 等各大主流 AI 工具。",
@@ -2632,7 +2618,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 191,
+                        "num": 190,
                         "name": "de-ai-writing",
                         "url": "https://github.com/tmacsyf/my_skills/tree/master/paper-skills/de-ai-writing",
                         "description": "基于 Codex 技能体系的学术论文 AI 痕迹扫描与修正工具。针对破折号滥用、伪转折、空洞句尾拔高等 10 条典型的 AI 生成写作模式实施精准扫描，提供修改建议报告并支持原位 LaTeX 排版修正。",
@@ -2647,7 +2633,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 192,
+                        "num": 191,
                         "name": "anti-defensive-writing",
                         "url": "https://github.com/Kiterlin/anti-defensive-writing",
                         "description": "基于 Codex 技能体系的学术论文与专业文本“反防御性写作”审查和修改工具。自动识别并修正文本中不必要的免责声明、犹豫表达与过度解释，使表述更直接、更具论证姿态。",
@@ -2662,7 +2648,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 193,
+                        "num": 192,
                         "name": "lean4-skills",
                         "url": "https://github.com/cameronfreer/lean4-skills",
                         "description": "面向 AI 编码智能体的 Lean 4 定理证明技能与工作流套件。提供结构化的证明/审查/高尔夫循环、mathlib 搜索、公理检查和安全护栏，兼容 Claude Code、Codex、Gemini CLI、Cursor 等多种宿主平台。",
@@ -2677,7 +2663,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 194,
+                        "num": 193,
                         "name": "lean-lsp-mcp",
                         "url": "https://github.com/oOo0oOo/lean-lsp-mcp",
                         "description": "基于语言服务器协议（LSP）的 Lean 定理证明器 MCP 服务端。支持 LLM 智能体与 Lean 项目进行丰富交互，包括获取诊断信息、目标状态、项信息和悬停文档，并内置 LeanSearch、Loogle 等外部定理搜索工具。",
@@ -2692,7 +2678,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 195,
+                        "num": 194,
                         "name": "Leanstral 1.5",
                         "url": "https://mistral.ai/news/leanstral-1-5/",
                         "description": "Mistral AI 发布的专用于 Lean 4 形式化证明的开源 MoE 大模型（119B 总参数 / 6B 激活）。在 miniF2F、PutnamBench 等基准上达到 SOTA，支持自动生成正确性属性并证明/反证，已在真实 Rust 代码库中发现未报告的 Bug。Apache-2.0 协议开源，提供免费 API。",
@@ -2707,7 +2693,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 196,
+                        "num": 195,
                         "name": "planning-with-files",
                         "url": "https://github.com/OthmanAdi/planning-with-files",
                         "description": "面向 AI 编程智能体的持久化文件级规划工具。提供防崩溃的 markdown 计划记录，能跨上下文丢失或清空操作持久留存，并支持基于磁盘的多智能体共享状态与确定性完成门控，兼容 Claude Code、Cursor 等各大主流智能体。",
@@ -2722,7 +2708,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 197,
+                        "num": 196,
                         "name": "VeryMath",
                         "url": "https://verymath.github.io/",
                         "description": "面向 AI 辅助数学研究的开源平台。致力于构建可复用、可验证、可协作的科研工作流，覆盖论文阅读（提取证明依赖与定理结构）、计算数学（数值实验与符号检验）、Lean 4 形式化验证以及自动化研究演化。",
@@ -2737,7 +2723,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 198,
+                        "num": 197,
                         "name": "LaTeXSnipper",
                         "url": "https://github.com/SakuraMathcraft/LaTeXSnipper",
                         "description": "功能强大的数学工作区与文档转换工具。支持屏幕截图 OCR、手写识别转 LaTeX 公式、Word/Office 插件式编辑以及基于 MathCraft OCR 与 MathLive 驱动的符号计算。",
@@ -2752,7 +2738,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 199,
+                        "num": 198,
                         "name": "Academic Figure Skill",
                         "url": "https://github.com/TingxiYu/academic-figure-skill",
                         "description": "以“问题驱动而非模板驱动”为核心原则的学术配图技能包。每一张图从科学问题出发，通过 8 步闭环工作流（用户意图解析 → 原型分类 → 图型论证 → 环境探测 → 风格注入 → 资产检索 → 渲染生成 → 质量验证），输出可直接投稿的矢量 PDF 主文件 + 300dpi PNG 预览 + 统计报告。",
@@ -2767,7 +2753,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 200,
+                        "num": 199,
                         "name": "Mrite",
                         "url": "https://github.com/Rzna-5559/Mrite",
                         "description": "专为国赛、美赛、MathorCup 等数学建模竞赛设计的 Claude Code 技能项目模板。放入赛题和附件数据后，AI 即可自动完成读取题目与附件、规划求解计划、编写 Python 代码求解并绘图、撰写含摘要和参考文献的 LaTeX 论文并自动编译排版为 PDF 且修复报错。",
@@ -2782,7 +2768,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 201,
+                        "num": 200,
                         "name": "中国大学生在线 - 数学建模专题",
                         "url": "https://dxs.moe.gov.cn/zx/hd/sxjm/",
                         "description": "教育部“中国大学生在线”全国大学生数学建模竞赛（CUMCM，高教社杯）官方合作专题平台。权威发布历届赛题下载、获奖名单、优秀论文展示、赛题讲评课、数模慕课及备赛经验分享。",
@@ -2797,7 +2783,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 202,
+                        "num": 201,
                         "name": "Idea2Paper",
                         "url": "https://github.com/AgentAlphaAGI/Idea2Paper",
                         "description": "端到端学术论文研究与写作智能体框架。通过显式分解科研阶段并引入契约化多智能体协作机制，将研究构想转化为逻辑严密、学术规范的学术叙事，重点解决科学范式生成与 argumentative 一致性挑战。",
@@ -2812,7 +2798,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 203,
+                        "num": 202,
                         "name": "Auto-claude-code-research-in-sleep",
                         "url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
                         "description": "ARIS (Auto-Research-In-Sleep) 是一款轻量级、免框架的自主机器学习研究工作流与智能体技能集。支持跨模型评审循环、构想发现与实验自动化，深度适配 Claude Code、Antigravity 等编程助手以实现无人值守的科研探索。",
@@ -2827,7 +2813,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 204,
+                        "num": 203,
                         "name": "dashi-ppt-skill",
                         "url": "https://github.com/chuspeeism/dashi-ppt-skill",
                         "description": "面向 AI 智能体的幻灯片生成与演示技能包。支持从多种视觉主题生成可在浏览器中直接编辑的演示文稿，并可导出为 HTML、PDF 和 PPTX 格式。",
@@ -2842,7 +2828,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 205,
+                        "num": 204,
                         "name": "academic-research-skills-codex",
                         "url": "https://github.com/Imbad0202/academic-research-skills-codex",
                         "description": "学术研究技能套件（ARS）的 Codex 平台专属分发版本。将原生的科研多智能体工作流打包为单个 Codex 规范技能（SKILL.md），免除 Claude Code 插件依赖，便于在 Codex 等通用智能体终端一键运行。",
@@ -2857,7 +2843,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 206,
+                        "num": 205,
                         "name": "latex-paper",
                         "url": "https://github.com/pmichaillat/latex-paper",
                         "description": "极其推崇学术论文排版最佳实践的极简 LaTeX 模板项目。提供高度结构化的文档目录与整洁的一句一行（One-sentence-per-line）差分格式，非常适合作为高水平学术论文的排版起点。",
@@ -2872,7 +2858,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 207,
+                        "num": 206,
                         "name": "Nature-Paper-Skills",
                         "url": "https://github.com/Boom5426/Nature-Paper-Skills",
                         "description": "专为 Nature 及其子刊投稿设计的 AI 智能体论文写作与编辑技能包。涵盖科学问题梳理、图表论证规划、参考文献卫生检查以及同行评审意见自动回复等全生命周期写作辅助。",
@@ -2887,7 +2873,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 208,
+                        "num": 207,
                         "name": "Research-Paper-Writing-Skills",
                         "url": "https://github.com/Master-cai/Research-Paper-Writing-Skills",
                         "description": "专为 AI 编码助手（如 Claude Code/Codex）优化的学术论文段落精修与写作技能集。支持针对摘要、引言、方法论到结论的细粒度逻辑重构与学术化表达润色。",
@@ -2902,7 +2888,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 209,
+                        "num": 208,
                         "name": "claude-scholar",
                         "url": "https://github.com/Galaxy-Dawn/claude-scholar",
                         "description": "专为 Claude Code 打造的半自动化科研与实验开发智能体助手。内置 30+ 技能和 50+ 扩展指令，全面覆盖科研灵感发现、代码实验运行、论文大纲写作到最终投稿审查的闭环流程。",
@@ -2917,7 +2903,7 @@ const GLOBAL_DATA = {
                         ]
                 },
                 {
-                        "num": 210,
+                        "num": 209,
                         "name": "literature-survey-skill",
                         "url": "https://github.com/SNL-UCSB/literature-survey-skill",
                         "description": "专为 Claude Code 开发的文献综述与学科现状快速调研技能。可自动化抓取指定学术库、抽取关键研究脉络并导出为结构化的文献对比矩阵与综述大纲报告。",
