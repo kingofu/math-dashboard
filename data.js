@@ -337,8 +337,8 @@ const GLOBAL_DATA = {
                         "url": "https://github.com/lhfer/claude-howto-zh-cn",
                         "description": "本土化重写的面向中国小白用户的 Claude Code 中文教程",
                         "stars": "2.2k",
-                        "category_id": "agent",
-                        "category_name": "AI智能体与集成框架",
+                        "category_id": "agent_clients",
+                        "category_name": "AI客户端与桌面工具",
                         "tags": [
                                 "开发工具",
                                 "AI智能体"
@@ -2966,10 +2966,6 @@ const GLOBAL_DATA = {
                 {
                         "id": "agent_integration",
                         "name": "MCP/插件与技能集成"
-                },
-                {
-                        "id": "agent",
-                        "name": "其他AI智能体与集成"
                 },
                 {
                         "id": "other",
