@@ -2916,6 +2916,21 @@ const GLOBAL_DATA = {
                                 "AI智能体",
                                 "MCP与插件"
                         ]
+                },
+                {
+                        "num": 210,
+                        "name": "math-modeling-skill-pro",
+                        "url": "https://github.com/skillforCUMCM/math-modeling-skill-pro",
+                        "description": "数学建模竞赛专家 Skill Pro 工具箱。包含 139 篇高分案例卡、方法知识库、论文模板、代码骨架以及自动化验证工具，专为国赛与美赛等建模场景打造。",
+                        "stars": "1",
+                        "category_id": "math_modeling",
+                        "category_name": "形式化数学与数模竞赛",
+                        "tags": [
+                                "数学建模",
+                                "案例卡",
+                                "方法库",
+                                "代码骨架"
+                        ]
                 }
         ],
         "CATEGORIES": [
