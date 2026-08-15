@@ -2931,6 +2931,51 @@ const GLOBAL_DATA = {
                                 "方法库",
                                 "代码骨架"
                         ]
+                },
+                {
+                        "num": 211,
+                        "name": "review-cumcm-paper",
+                        "url": "https://github.com/zhoufz021/review-cumcm-paper",
+                        "description": "面向全国大学生数学建模竞赛（CUMCM）的论文证据链审核 Codex 技能。以原始赛题为索引，提供快速筛查、十二维全量评分、题型专项检查与修改复审，生成带原文页序/段落定位的修改报告。",
+                        "stars": "1",
+                        "category_id": "math_modeling",
+                        "category_name": "形式化数学与数模竞赛",
+                        "tags": [
+                                "数模评审",
+                                "论文审核",
+                                "CUMCM",
+                                "AI技能"
+                        ]
+                },
+                {
+                        "num": 212,
+                        "name": "CUMCM-Paper-And-SourceCode",
+                        "url": "https://github.com/yan-fanyu/CUMCM-Paper-And-SourceCode",
+                        "description": "2010至2024年全国大学生数学建模竞赛（CUMCM）历年参考获奖论文及源代码开源合集，覆盖多年国赛真题的求解代码、论文参考与赛题资料。",
+                        "stars": "59",
+                        "category_id": "math_modeling",
+                        "category_name": "形式化数学与数模竞赛",
+                        "tags": [
+                                "数模真题",
+                                "获奖论文",
+                                "源码合集",
+                                "CUMCM"
+                        ]
+                },
+                {
+                        "num": 213,
+                        "name": "cumcm-step-review",
+                        "url": "https://github.com/yuanchen-home/cumcm-step-review",
+                        "description": "面向 CUMCM 国赛的论文分步审核与写作工作流技能。支持十部分闭环审核（从问题重述、数据预处理到摘要定稿）、内置 93 篇优秀论文语料指南、7套顶刊配色数据图规范及 drawio 流程图生成。",
+                        "stars": "3",
+                        "category_id": "math_modeling",
+                        "category_name": "形式化数学与数模竞赛",
+                        "tags": [
+                                "数模分步审核",
+                                "优秀论文写法",
+                                "流程图绘制",
+                                "CUMCM"
+                        ]
                 }
         ],
         "CATEGORIES": [
