@@ -2976,6 +2976,21 @@ const GLOBAL_DATA = {
                                 "流程图绘制",
                                 "CUMCM"
                         ]
+                },
+                {
+                        "num": 214,
+                        "name": "数学建模赛前训练与可复现交付指南",
+                        "url": "https://studentp.cloud/guides/mathematical-modeling-competition-reproducibility-guide",
+                        "description": "面向数学建模竞赛（CUMCM/MCM/ICM）的赛前训练与可复现交付合规指南。涵盖任务拆解矩阵、最小基线构建、引用清单维护、五类反证检验（数据/切分/参数/约束/解释）以及提交前独立验收流程。",
+                        "stars": "N/A",
+                        "category_id": "math_modeling",
+                        "category_name": "形式化数学与数模竞赛",
+                        "tags": [
+                                "数模规范",
+                                "可复现建模",
+                                "备赛指南",
+                                "验收清单"
+                        ]
                 }
         ],
         "CATEGORIES": [
