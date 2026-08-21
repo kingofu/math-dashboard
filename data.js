@@ -2991,6 +2991,21 @@ const GLOBAL_DATA = {
                                 "备赛指南",
                                 "验收清单"
                         ]
+                },
+                {
+                        "num": 215,
+                        "name": "math-question-bank",
+                        "url": "https://github.com/JudgePeach/math-question-bank",
+                        "description": "本地化高中数学题库管理系统。支持 LaTeX 公式实时渲染、基于大模型的 AI 智能题目解析与解答，以及公式 OCR 图像识别录入功能。",
+                        "stars": "162",
+                        "category_id": "teaching_prep",
+                        "category_name": "教案与备课工具",
+                        "tags": [
+                                "数学题库",
+                                "LaTeX",
+                                "智能解析",
+                                "高中数学"
+                        ]
                 }
         ],
         "CATEGORIES": [
