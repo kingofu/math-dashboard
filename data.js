@@ -3021,6 +3021,36 @@ const GLOBAL_DATA = {
                                 "AI智能体",
                                 "数学教学"
                         ]
+                },
+                {
+                        "num": 217,
+                        "name": "cumcm-c-problem-lfs",
+                        "url": "https://github.com/liufanshan11/cumcm-c-problem-lfs",
+                        "description": "专攻全国大学生数学建模竞赛（CUMCM）C 题（数据分析与机器学习类）的 AI Skill。针对大数据处理、特征工程、统计预测与分类评估等赛题场景提供系统化解题流与代码模板。",
+                        "stars": "13",
+                        "category_id": "math_modeling",
+                        "category_name": "形式化数学与数模竞赛",
+                        "tags": [
+                                "数学建模",
+                                "CUMCM",
+                                "C题专攻",
+                                "数据分析"
+                        ]
+                },
+                {
+                        "num": 218,
+                        "name": "cumcm-b-problem-lfs",
+                        "url": "https://github.com/liufanshan11/cumcm-b-problem-lfs",
+                        "description": "专攻全国大学生数学建模竞赛（CUMCM）B 题（机理建模与运筹优化类）的 AI Skill。针对几何与物理机理推导、微分动力系统仿真、约束规划与智能启发式求解提供针对性建模工作流。",
+                        "stars": "28",
+                        "category_id": "math_modeling",
+                        "category_name": "形式化数学与数模竞赛",
+                        "tags": [
+                                "数学建模",
+                                "CUMCM",
+                                "B题专攻",
+                                "机理优化"
+                        ]
                 }
         ],
         "CATEGORIES": [
