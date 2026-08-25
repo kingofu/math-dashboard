@@ -3006,6 +3006,21 @@ const GLOBAL_DATA = {
                                 "智能解析",
                                 "高中数学"
                         ]
+                },
+                {
+                        "num": 216,
+                        "name": "edulab",
+                        "url": "https://github.com/wy51ai/edulab",
+                        "description": "面向数学教学场景的 AI 智能体技能合集。支持将立体几何、圆锥曲线/解析几何等数学题目自动求解并转换为自包含的交互式网页课件（集成 2D/3D 动态画板与 KaTeX 渲染），提供文字输入、图片识别与随机出题三种交互模式。",
+                        "stars": "1.1k",
+                        "category_id": "tutoring",
+                        "category_name": "智能教学与启发式辅导",
+                        "tags": [
+                                "互动课件",
+                                "几何求解",
+                                "AI智能体",
+                                "数学教学"
+                        ]
                 }
         ],
         "CATEGORIES": [
