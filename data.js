@@ -3051,6 +3051,21 @@ const GLOBAL_DATA = {
                                 "B题专攻",
                                 "机理优化"
                         ]
+                },
+                {
+                        "num": 219,
+                        "name": "human-writing",
+                        "url": "https://github.com/KKKKhazix/human-writing",
+                        "description": "让 AI 写的中文更具真实人类表达风格的通用创作与改稿 Skill。针对大模型写作中常见的空洞排比、机械套话、伪深刻总结实施精准修正，提供开箱即用的去 AI 感润色指南与提示词规范。",
+                        "stars": "3.3k",
+                        "category_id": "paper_writing",
+                        "category_name": "论文写作与投稿",
+                        "tags": [
+                                "去AI化",
+                                "文本润色",
+                                "AI改稿",
+                                "写作辅助"
+                        ]
                 }
         ],
         "CATEGORIES": [
