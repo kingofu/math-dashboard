@@ -3066,6 +3066,21 @@ const GLOBAL_DATA = {
                                 "AI改稿",
                                 "写作辅助"
                         ]
+                },
+                {
+                        "num": 220,
+                        "name": "writing-dna-skill",
+                        "url": "https://github.com/larashero3-dotcom/writing-dna-skill",
+                        "description": "写作蒸馏器 Agent Skill。可从给定的样例文本中深度蒸馏作者的文风基因（句式结构、用词偏好、论证节奏与语气风格），并复刻固化为可复用的写作技能，实现高度拟真特定文风的自动化仿写与润色。",
+                        "stars": "1.3k",
+                        "category_id": "paper_writing",
+                        "category_name": "论文写作与投稿",
+                        "tags": [
+                                "文风蒸馏",
+                                "风格仿写",
+                                "写作辅助",
+                                "AI技能"
+                        ]
                 }
         ],
         "CATEGORIES": [
