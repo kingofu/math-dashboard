@@ -3081,6 +3081,21 @@ const GLOBAL_DATA = {
                                 "写作辅助",
                                 "AI技能"
                         ]
+                },
+                {
+                        "num": 221,
+                        "name": "huawei-cup-modeling-skill",
+                        "url": "https://github.com/Nopon-Knowledge/huawei-cup-modeling-skill",
+                        "description": "面向华为杯中国研究生数学建模竞赛（NPMCM）的 Codex 论文去 AI 感与学术润色技能。支持逐句诊断、去模板化重构改写、图表排版优化、赛事规则合规核验与提交审计，保留关键研究事实与数据链条。",
+                        "stars": "18",
+                        "category_id": "math_modeling",
+                        "category_name": "形式化数学与数模竞赛",
+                        "tags": [
+                                "华为杯",
+                                "研赛建模",
+                                "去AI化",
+                                "论文润色"
+                        ]
                 }
         ],
         "CATEGORIES": [
