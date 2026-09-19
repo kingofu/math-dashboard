@@ -3096,6 +3096,21 @@ const GLOBAL_DATA = {
                                 "去AI化",
                                 "论文润色"
                         ]
+                },
+                {
+                        "num": 222,
+                        "name": "anything2explainer",
+                        "url": "https://github.com/Vincentwei1021/anything2explainer",
+                        "description": "面向 Claude Code / Codex 的解说动效视频生成技能。输入任意学术或科普主题，基于 Remotion 纯代码驱动自动渲染极简黑底动态图表、TTS 语音旁白、同步字幕与章节进度条，一键全自动导出高品质讲解视频。",
+                        "stars": "1.7k",
+                        "category_id": "visualization",
+                        "category_name": "数学可视化与动画生成",
+                        "tags": [
+                                "视频生成",
+                                "Remotion",
+                                "动效解说",
+                                "学术可视化"
+                        ]
                 }
         ],
         "CATEGORIES": [
