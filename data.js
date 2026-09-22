@@ -3141,6 +3141,21 @@ const GLOBAL_DATA = {
                                 "学术润色",
                                 "自然表达"
                         ]
+                },
+                {
+                        "num": 225,
+                        "name": "AmTiKu",
+                        "url": "https://github.com/xiaoming-kun/AmTiKu",
+                        "description": "本地高中数学题库与智能组卷系统。支持“检索 → 组卷 → 导出 → 讲义”全流程；题目采用标准 LaTeX 格式录入，界面基于 KaTeX 实时公式渲染，内置覆盖 152 个高考数学考点的大纲知识树。",
+                        "stars": "1",
+                        "category_id": "teaching_prep",
+                        "category_name": "教案与备课工具",
+                        "tags": [
+                                "数学题库",
+                                "智能组卷",
+                                "LaTeX/KaTeX",
+                                "高中数学"
+                        ]
                 }
         ],
         "CATEGORIES": [
