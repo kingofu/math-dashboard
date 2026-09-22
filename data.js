@@ -3156,6 +3156,21 @@ const GLOBAL_DATA = {
                                 "LaTeX/KaTeX",
                                 "高中数学"
                         ]
+                },
+                {
+                        "num": 226,
+                        "name": "Huaweibei-cool",
+                        "url": "https://github.com/siyunhao2025-beep/Huaweibei-cool",
+                        "description": "面向华为杯中国研究生数学建模竞赛（NPMCM）的 AI 作战中枢技能。基于 729 篇获奖论文蒸馏，提炼 8 大题型原型、51 张方法卡与 24 道真题赛道档案；提供反套路读题门禁、Figure/Table 图表双账本规划、LaTeX/Word 双论文链路与全流程质量自检。",
+                        "stars": "19",
+                        "category_id": "math_modeling",
+                        "category_name": "形式化数学与数模竞赛",
+                        "tags": [
+                                "华为杯",
+                                "研赛建模",
+                                "题型原型",
+                                "作战中枢"
+                        ]
                 }
         ],
         "CATEGORIES": [
