@@ -3111,6 +3111,36 @@ const GLOBAL_DATA = {
                                 "动效解说",
                                 "学术可视化"
                         ]
+                },
+                {
+                        "num": 223,
+                        "name": "math-modeling-skill (anticipate218)",
+                        "url": "https://github.com/anticipate218/math-modeling-skill",
+                        "description": "面向 AI 助手的数学建模竞赛全流程技能包。全面覆盖国赛（CUMCM）、研赛（华为杯）与美赛（MCM/ICM）的选题决策、机理与统计模型构建、代码求解验证及论文自检门禁。",
+                        "stars": "15",
+                        "category_id": "math_modeling",
+                        "category_name": "形式化数学与数模竞赛",
+                        "tags": [
+                                "数学建模",
+                                "CUMCM",
+                                "华为杯",
+                                "MCM/ICM"
+                        ]
+                },
+                {
+                        "num": 224,
+                        "name": "talk-normal",
+                        "url": "https://github.com/hexiecs/talk-normal",
+                        "description": "旨在消除大语言模型“AI 腔调”（AI slop）的系统规则与提示词规范。严格约束大模型避免空洞排比、伪深刻总结与否定式对比句式，输出自然、清晰且符合人类交流习惯的文本。",
+                        "stars": "1.9k",
+                        "category_id": "paper_writing",
+                        "category_name": "论文写作与投稿",
+                        "tags": [
+                                "去AI化",
+                                "系统提示词",
+                                "学术润色",
+                                "自然表达"
+                        ]
                 }
         ],
         "CATEGORIES": [
