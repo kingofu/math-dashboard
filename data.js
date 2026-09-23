@@ -3171,6 +3171,21 @@ const GLOBAL_DATA = {
                                 "题型原型",
                                 "作战中枢"
                         ]
+                },
+                {
+                        "num": 227,
+                        "name": "EditaPlot",
+                        "url": "https://github.com/hang-jin/editaplot",
+                        "description": "AI 驱动的可编辑科研绘图工作流。支持通过 Codex 智能体与本地 Origin/OriginPro 软件联动，根据实验数据与绘图意图自动生成符合顶刊规范的高质量、可二次编辑的矢量科研图表与工程配图。",
+                        "stars": "730",
+                        "category_id": "visualization",
+                        "category_name": "数学可视化与动画生成",
+                        "tags": [
+                                "科研绘图",
+                                "Origin/OriginPro",
+                                "可编辑图表",
+                                "学术可视化"
+                        ]
                 }
         ],
         "CATEGORIES": [
