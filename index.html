@@ -172,12 +172,7 @@
             background: var(--header-gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 0.5rem;
-        }
-
-        .header-title p {
-            color: var(--text-muted);
-            font-size: 1rem;
+            margin-bottom: 0;
         }
 
         .theme-controls {
@@ -621,7 +616,6 @@
         <header>
             <div class="header-title">
                 <h1>AI数学教学与学术工具导航</h1>
-                <p>实时检索、自动归类、智能标签的学术项目导航中心</p>
             </div>
             <div class="theme-controls">
                 <select class="theme-select" id="themeSelect2" onchange="setTheme(this.value)">
@@ -649,12 +643,12 @@
                     <div class="search-wrapper">
                         <!-- Search SVG -->
                         <svg class="search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-                        <input type="text" class="search-input" placeholder="输入名称、简介或标签过滤项目..." id="searchInput" oninput="filterProjects()">
+                        <input type="text" class="search-input" placeholder="搜索项目或标签..." id="searchInput" oninput="filterProjects()">
                     </div>
                     <select class="sort-select" id="sortSelect" onchange="filterProjects()">
-                        <option value="id_asc">按默认序号 (升序)</option>
-                        <option value="id_desc">按默认序号 (降序)</option>
-                        <option value="stars_desc" selected>按 Star 数 (从高到低)</option>
+                        <option value="id_asc">序号升序</option>
+                        <option value="id_desc">序号降序</option>
+                        <option value="stars_desc" selected>Star 降序</option>
                     </select>
                 </div>
 
@@ -664,8 +658,8 @@
 
                 <div class="empty-state" id="emptyState">
                     <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-                    <h3>未找到相关项目</h3>
-                    <p>请尝试更改检索条件或清除搜索框</p>
+                    <h3>无匹配项目</h3>
+                    <button class="default-btn" style="margin-top: 1rem; padding: 0.5rem 1.2rem;" onclick="clearFilters()">清空筛选</button>
                 </div>
             </div>
         </div>
@@ -814,6 +808,12 @@
                     behavior: 'smooth'
                 });
             }
+        }
+
+        
+        function clearFilters() {
+            document.getElementById("searchInput").value = "";
+            selectCategory('all');
         }
 
         function clickTag(tagName) {
