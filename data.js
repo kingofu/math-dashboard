@@ -876,16 +876,17 @@ const GLOBAL_DATA = {
                 },
                 {
                         "num": 67,
-                        "name": "paper-search-cli",
-                        "url": "https://github.com/dr-dumpling/paper-search-cli",
-                        "description": "专为大模型 Agent 优化的命令行工具，支持学术论文检索、期刊指标查询及 PDF 下载。",
-                        "stars": "140",
+                        "name": "PaperSearch",
+                        "url": "https://github.com/dr-dumpling/PaperSearch",
+                        "description": "专为大模型 Agent 优化的学术论文检索与全文下载工具。支持跨 20+ 学术数据库检索、期刊分区与影响因子查询、文献引用追踪及高校 CARSI 认证全文下载。",
+                        "stars": "156",
                         "category_id": "literature_retrieval",
                         "category_name": "文献检索与阅读",
                         "tags": [
                                 "文献检索",
                                 "学术科研",
-                                "开发工具"
+                                "开发工具",
+                                "AI智能体"
                         ]
                 },
                 {
