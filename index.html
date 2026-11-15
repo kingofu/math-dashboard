@@ -7,109 +7,23 @@
     <!-- Google Fonts Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --bg-color: #09090B;
-            --container-bg: rgba(24, 24, 27, 0.6);
-            --card-bg: rgba(39, 39, 42, 0.7);
-            --border-color: rgba(255, 255, 255, 0.1);
-            --border-hover: rgba(56, 189, 248, 0.4);
-            --text-color: #F4F4F5;
-            --text-muted: #A1A1AA;
-            --accent-color: #38BDF8;
-            --accent-glow: rgba(56, 189, 248, 0.15);
-            --tag-bg: rgba(56, 189, 248, 0.1);
-            --tag-text: #38BDF8;
-            --shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
-            --header-gradient: linear-gradient(135deg, #F8FAFC 0%, #94A3B8 100%);
-        }
-
-        [data-theme="light"] {
-            --bg-color: #FFFFFF;
-            --container-bg: rgba(250, 250, 250, 0.8);
+            --bg-color: #F8F9FA;
+            --container-bg: rgba(255, 255, 255, 0.85);
             --card-bg: #FFFFFF;
-            --border-color: rgba(0, 0, 0, 0.06);
+            --border-color: rgba(0, 0, 0, 0.07);
             --border-hover: rgba(0, 0, 0, 0.2);
             --text-color: #18181B;
             --text-muted: #71717A;
             --accent-color: #18181B;
             --accent-glow: rgba(0, 0, 0, 0.05);
-            --tag-bg: rgba(24, 24, 27, 0.06);
-            --tag-text: #18181B;
-            --shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+            --tag-bg: rgba(24, 24, 27, 0.05);
+            --tag-text: #27272A;
+            --shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
             --header-gradient: linear-gradient(135deg, #18181B 0%, #52525B 100%);
-        }
-
-        /* Theme: 复古典藏 (Vintage Press) */
-        [data-theme="vintage"] {
-            --bg-color: #F5F2EB;
-            --container-bg: rgba(245, 242, 235, 0.85);
-            --card-bg: rgba(252, 250, 246, 0.95);
-            --border-color: rgba(42, 38, 38, 0.1);
-            --border-hover: rgba(139, 30, 15, 0.4);
-            --text-color: #2A2626;
-            --text-muted: #6B6054;
-            --accent-color: #8B1E0F;
-            --accent-glow: rgba(139, 30, 15, 0.15);
-            --tag-bg: rgba(139, 30, 15, 0.08);
-            --tag-text: #8B1E0F;
-            --shadow: 0 4px 24px rgba(42, 38, 38, 0.08);
-            --header-gradient: linear-gradient(135deg, #1A365D 0%, #8B1E0F 100%);
-        }
-
-        /* Theme: 极简北欧 (Nordic Minimal) */
-        [data-theme="nordic"] {
-            --bg-color: #ECEFF4;
-            --container-bg: rgba(236, 239, 244, 0.8);
-            --card-bg: #FAFBFC;
-            --border-color: rgba(46, 52, 64, 0.08);
-            --border-hover: rgba(94, 129, 172, 0.4);
-            --text-color: #2E3440;
-            --text-muted: #4C566A;
-            --accent-color: #5E81AC;
-            --accent-glow: rgba(94, 129, 172, 0.15);
-            --tag-bg: rgba(94, 129, 172, 0.1);
-            --tag-text: #5E81AC;
-            --shadow: 0 4px 16px rgba(46, 52, 64, 0.06);
-            --header-gradient: linear-gradient(135deg, #2E3440 0%, #4C566A 100%);
-        }
-
-        /* Theme: 工业钛灰 (Industrial) */
-        [data-theme="industrial"] {
-            --bg-color: #D1D5DB;
-            --container-bg: rgba(209, 213, 219, 0.7);
-            --card-bg: #E5E5EA;
-            --border-color: rgba(28, 28, 30, 0.1);
-            --border-hover: rgba(130, 80, 54, 0.4);
-            --text-color: #1C1C1E;
-            --text-muted: #636366;
-            --accent-color: #825036; /* 斑驳锈铁/破旧黄铜色 (Rusted Iron) */
-            --accent-glow: rgba(130, 80, 54, 0.15);
-            --tag-bg: rgba(130, 80, 54, 0.12);
-            --tag-text: #825036;
-            --shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-            --header-gradient: linear-gradient(135deg, #374151 0%, #1F2937 100%);
-        }
-
-        /* Vintage theme: serif headings */
-        [data-theme="vintage"] .header-title h1,
-        [data-theme="vintage"] .card-title {
-            font-family: 'Playfair Display', Georgia, serif;
-        }
-
-        /* Nordic theme: extra-clean card borders */
-        [data-theme="nordic"] .card {
-            border-radius: 12px;
-        }
-
-        /* Industrial theme: sharper corners */
-        [data-theme="industrial"] .card {
-            border-radius: 8px;
-        }
-        [data-theme="industrial"] .container {
-            border-radius: 12px;
         }
 
         * {
@@ -128,21 +42,6 @@
             position: relative;
             overflow-x: hidden;
         }
-
-        /* Aura Background Gradients (Dark Mode only for heavy blur aesthetics) */
-        .aura {
-            position: absolute;
-            width: 40vw;
-            height: 40vw;
-            border-radius: 50%;
-            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
-            z-index: -1;
-            filter: blur(80px);
-            pointer-events: none;
-            opacity: 0.8;
-        }
-        .aura-1 { top: -10vw; right: -10vw; }
-        .aura-2 { bottom: -10vw; left: -10vw; }
 
         .container {
             max-width: 1200px;
@@ -173,56 +72,6 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 0;
-        }
-
-        .theme-controls {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .theme-select {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            color: var(--text-color);
-            cursor: pointer;
-            padding: 0.55rem 0.9rem;
-            border-radius: 12px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            outline: none;
-            font-family: 'Inter', system-ui, sans-serif;
-            min-width: 140px;
-        }
-
-        .theme-select:focus {
-            border-color: var(--accent-color);
-            box-shadow: 0 0 12px var(--accent-glow);
-        }
-
-        .default-btn {
-            background: transparent;
-            border: 1px solid var(--border-color);
-            color: var(--text-muted);
-            cursor: pointer;
-            padding: 0.55rem 0.8rem;
-            border-radius: 12px;
-            font-size: 0.78rem;
-            font-weight: 500;
-            white-space: nowrap;
-            font-family: 'Inter', system-ui, sans-serif;
-        }
-
-        .default-btn:hover {
-            border-color: var(--accent-color);
-            color: var(--accent-color);
-            box-shadow: 0 0 10px var(--accent-glow);
-        }
-
-        .default-btn.is-default {
-            background: var(--accent-color);
-            color: #ffffff;
-            border-color: var(--accent-color);
         }
 
         /* Main Layout */
@@ -348,7 +197,7 @@
             background: var(--accent-color);
             color: #ffffff;
             border-color: var(--accent-color);
-            box-shadow: 0 4px 12px var(--accent-glow);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
         }
 
         .tab-emoji {
@@ -356,7 +205,7 @@
         }
 
         .tab-count {
-            display: none; /* Hidden on desktop vertical sidebar for cleaner styling */
+            display: none;
         }
 
         /* Main Grid cards layout */
@@ -382,7 +231,7 @@
         .card:hover {
             transform: translateY(-4px);
             border-color: var(--border-hover);
-            box-shadow: 0 12px 24px var(--accent-glow);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
         }
 
         @keyframes fadeIn {
@@ -415,8 +264,8 @@
             gap: 0.25rem;
             font-size: 0.85rem;
             font-weight: 600;
-            color: #fbbf24;
-            background: rgba(251, 191, 36, 0.1);
+            color: #d97706;
+            background: rgba(245, 158, 11, 0.1);
             padding: 0.25rem 0.6rem;
             border-radius: 8px;
         }
@@ -502,6 +351,26 @@
             box-shadow: none;
         }
 
+        /* Button outline */
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            cursor: pointer;
+            padding: 0.55rem 1.2rem;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            white-space: nowrap;
+            transition: all 0.2s ease;
+        }
+
+        .btn-outline:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+            box-shadow: 0 0 10px var(--accent-glow);
+        }
+
         /* Empty state styling */
         .empty-state {
             display: none;
@@ -523,7 +392,6 @@
             margin-bottom: 0.5rem;
         }
 
-        /* Responsive adaptations */
         /* Responsive adaptations */
         @media (max-width: 1200px) {
             .grid {
@@ -568,11 +436,11 @@
                 padding-bottom: 0.8rem;
                 margin-bottom: 0.5rem;
                 border-bottom: 1px solid var(--border-color);
-                scrollbar-width: none; /* Firefox */
+                scrollbar-width: none;
             }
 
             .tabs-container::-webkit-scrollbar {
-                display: none; /* Chrome/Safari */
+                display: none;
             }
 
             .tab {
@@ -588,7 +456,7 @@
             .tab-count {
                 display: inline-block;
                 border-radius: 10px;
-                background: rgba(0, 0, 0, 0.2);
+                background: rgba(0, 0, 0, 0.08);
                 padding: 0.1rem 0.4rem;
                 font-size: 0.75rem;
             }
@@ -601,7 +469,6 @@
         @media (max-width: 768px) {
             .container { padding: 1.5rem; }
             header { flex-direction: column; align-items: flex-start; gap: 1.2rem; }
-            .theme-controls { align-self: flex-end; flex-wrap: wrap; justify-content: flex-end; width: 100%; }
             .search-sort-bar { flex-direction: column; }
             .sort-select { width: 100%; }
             .grid { grid-template-columns: 1fr; }
@@ -609,23 +476,10 @@
     </style>
 </head>
 <body>
-    <div class="aura aura-1"></div>
-    <div class="aura aura-2"></div>
-
     <div class="container">
         <header>
             <div class="header-title">
                 <h1>AI数学教学与学术工具导航</h1>
-            </div>
-            <div class="theme-controls">
-                <select class="theme-select" id="themeSelect2" onchange="setTheme(this.value)">
-                    <option value="dark">🌌 赛博暗夜</option>
-                    <option value="light">🌅 亚光纯白</option>
-                    <option value="vintage">📜 复古典藏</option>
-                    <option value="nordic">❄️ 极简北欧</option>
-                    <option value="industrial">🏗️ 工业钛灰</option>
-                </select>
-                <button class="default-btn" id="defaultBtn" onclick="setDefaultTheme()" title="将当前主题设为默认">⭐ 设为默认</button>
             </div>
         </header>
 
@@ -659,19 +513,15 @@
                 <div class="empty-state" id="emptyState">
                     <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
                     <h3>无匹配项目</h3>
-                    <button class="default-btn" style="margin-top: 1rem; padding: 0.5rem 1.2rem;" onclick="clearFilters()">清空筛选</button>
+                    <button class="btn-outline" style="margin-top: 1rem;" onclick="clearFilters()">清空筛选</button>
                 </div>
             </div>
         </div>
     </div>
 
     <script src="data.js"></script>
-<script>
-        
-        
-        
+    <script>
         let activeCategory = "all";
-        let activeTheme = 'dark';
 
         // Initialization
         window.onload = function() {
@@ -679,42 +529,7 @@
             // Default sort: by Star count descending
             document.getElementById('sortSelect').value = 'stars_desc';
             filterProjects();
-
-            // Apply saved default theme (localStorage) or fallback to dark
-            const savedTheme = localStorage.getItem('dashboardDefaultTheme') || 'dark';
-            setTheme(savedTheme);
         };
-
-        function setTheme(theme) {
-            activeTheme = theme;
-            document.documentElement.setAttribute('data-theme', theme);
-            // Sync the header dropdown
-            const sel = document.getElementById('themeSelect2');
-            if (sel) sel.value = theme;
-            updateDefaultBtnState();
-        }
-
-        function setDefaultTheme() {
-            localStorage.setItem('dashboardDefaultTheme', activeTheme);
-            // Brief visual feedback
-            const btn = document.getElementById('defaultBtn');
-            btn.textContent = '✅ 已保存';
-            btn.classList.add('is-default');
-            setTimeout(() => { updateDefaultBtnState(); }, 1200);
-        }
-
-        function updateDefaultBtnState() {
-            const btn = document.getElementById('defaultBtn');
-            if (!btn) return;
-            const saved = localStorage.getItem('dashboardDefaultTheme');
-            if (saved === activeTheme) {
-                btn.classList.add('is-default');
-                btn.textContent = '✅ 当前默认';
-            } else {
-                btn.classList.remove('is-default');
-                btn.textContent = '⭐ 设为默认';
-            }
-        }
 
         // Helper to count category stars
         function parseStarValue(starStr) {
@@ -810,7 +625,6 @@
             }
         }
 
-        
         function clearFilters() {
             document.getElementById("searchInput").value = "";
             selectCategory('all');
